@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 <title>For You ❤️</title>
 <meta name="description" content="A little love story, made just for you." />
 
@@ -14,11 +14,18 @@
 </head>
 <body>
 
-<!-- Floating hearts canvas layer (behind everything) -->
+<!-- Floating hearts background -->
 <div id="heart-field" aria-hidden="true"></div>
 
-<!-- Skip link for accessibility -->
+<!-- Skip link -->
 <a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ LANGUAGE SWITCHER ============ -->
+<div class="lang-switcher" id="langSwitcher">
+  <button class="lang-btn" data-lang="en" aria-label="Switch to English">🇬🇧 EN</button>
+  <span class="lang-divider">|</span>
+  <button class="lang-btn" data-lang="am" aria-label="Switch to Amharic">🇪🇹 አማ</button>
+</div>
 
 <!-- ============ NAVIGATION ============ -->
 <nav class="nav" id="siteNav" aria-label="Story navigation">
@@ -29,14 +36,17 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav__links" id="navLinks">
-    <li><a href="#opening" data-nav>Home</a></li>
-    <li><a href="#story" data-nav>Memories</a></li>
-    <li><a href="#gallery" data-nav>Gallery</a></li>
-    <li><a href="#letter" data-nav>Letter</a></li>
-    <li><a href="#reasons" data-nav>Reasons</a></li>
-    <li><a href="#surprise" data-nav>Surprise</a></li>
+    <li><a href="#opening" data-nav data-i18n="navHome">Home</a></li>
+    <li><a href="#story" data-nav data-i18n="navMemories">Memories</a></li>
+    <li><a href="#gallery" data-nav data-i18n="navGallery">Gallery</a></li>
+    <li><a href="#letter" data-nav data-i18n="navLetter">Letter</a></li>
+    <li><a href="#reasons" data-nav data-i18n="navReasons">Reasons</a></li>
+    <li><a href="#surprise" data-nav data-i18n="navSurprise">Surprise</a></li>
   </ul>
 </nav>
+
+<!-- ============ MOBILE MENU OVERLAY ============ -->
+<div class="nav-overlay" id="navOverlay"></div>
 
 <!-- Scroll progress bar -->
 <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
@@ -46,8 +56,8 @@
   <!-- ============ 1. OPENING / GIFT SCREEN ============ -->
   <section class="screen screen--opening" id="opening">
     <div class="opening__sparkles" aria-hidden="true"></div>
-    <p class="eyebrow-line">✨ I made something special for you ✨</p>
-    <h1 class="opening__title">For the most beautiful<br>person in my life <span class="heart-glyph">❤</span></h1>
+    <p class="eyebrow-line" data-i18n="eyebrow">✨ I made something special for you ✨</p>
+    <h1 class="opening__title" data-i18n="openingTitle">For the most<br>beautiful<br>person in my life <span class="heart-glyph">❤</span></h1>
 
     <button class="gift-box" id="giftBox" aria-label="Open your gift">
       <span class="gift-box__glow" aria-hidden="true"></span>
@@ -58,30 +68,30 @@
       <span class="gift-box__bow" aria-hidden="true">🎀</span>
     </button>
 
-    <button class="btn btn--primary" id="openGiftBtn">Open Your Gift 🎁</button>
-    <p class="opening__hint">(tap the box or the button)</p>
+    <button class="btn btn--primary" id="openGiftBtn" data-i18n="openGift">Open Your Gift 🎁</button>
+    <p class="opening__hint" data-i18n="giftHint">(tap the box or the button)</p>
   </section>
 
   <!-- ============ 2. WELCOME ============ -->
   <section class="screen screen--welcome" id="welcome" hidden>
     <div class="welcome__inner">
-      <h2 class="welcome__greeting">Hey, <span id="herNameWelcome">You</span> <span class="heart-glyph">❤</span></h2>
+      <h2 class="welcome__greeting"><span data-i18n="welcomeHey">Hey</span>, <span id="herNameWelcome">You</span> <span class="heart-glyph">❤</span></h2>
       <p class="welcome__type" id="typewriter" aria-live="polite"></p>
-      <button class="btn btn--ghost welcome__continue" id="continueBtn">Continue Our Story <span aria-hidden="true">→</span> ❤️</button>
+      <button class="btn btn--ghost welcome__continue" id="continueBtn" data-i18n="continueStory">Continue Our Story <span aria-hidden="true">→</span> ❤️</button>
     </div>
   </section>
 
-  <!-- ============ 3. TIMELINE / OUR STORY ============ -->
+  <!-- ============ 3. TIMELINE ============ -->
   <section class="section section--timeline" id="story">
-    <h2 class="section__title">Little Moments, Big Memories <span aria-hidden="true">💕</span></h2>
-    <div class="timeline" id="timeline"><!-- populated by JS from loveConfig.timeline --></div>
+    <h2 class="section__title" data-i18n="timelineTitle">Little Moments, Big Memories <span aria-hidden="true">💕</span></h2>
+    <div class="timeline" id="timeline"></div>
   </section>
 
   <!-- ============ 4. PHOTO GALLERY ============ -->
   <section class="section section--gallery" id="gallery">
-    <h2 class="section__title">Our Beautiful Memories <span aria-hidden="true">📸❤️</span></h2>
-    <p class="section__sub">Tap any photo to see it up close. Double-tap for a little love.</p>
-    <div class="masonry" id="masonryGallery"><!-- populated by JS --></div>
+    <h2 class="section__title" data-i18n="galleryTitle">Our Beautiful Memories <span aria-hidden="true">📸❤️</span></h2>
+    <p class="section__sub" data-i18n="gallerySub">Tap any photo to see it up close. Double-tap for a little love.</p>
+    <div class="masonry" id="masonryGallery"></div>
   </section>
 
   <!-- Lightbox -->
@@ -98,9 +108,9 @@
 
   <!-- ============ 5. SLIDESHOW ============ -->
   <section class="section section--slideshow">
-    <h2 class="section__title">A Little Film Of Us <span aria-hidden="true">🎞️</span></h2>
+    <h2 class="section__title" data-i18n="slideshowTitle">A Little Film Of Us <span aria-hidden="true">🎞️</span></h2>
     <div class="slideshow" id="slideshow">
-      <div class="slideshow__track" id="slideshowTrack"><!-- populated by JS --></div>
+      <div class="slideshow__track" id="slideshowTrack"></div>
       <button class="slideshow__arrow slideshow__arrow--prev" id="slidePrev" aria-label="Previous slide">&#10094;</button>
       <button class="slideshow__arrow slideshow__arrow--next" id="slideNext" aria-label="Next slide">&#10095;</button>
       <div class="slideshow__dots" id="slideDots"></div>
@@ -109,7 +119,7 @@
 
   <!-- ============ 6. LOVE LETTER ============ -->
   <section class="section section--letter" id="letter">
-    <h2 class="section__title">You Have A Letter <span aria-hidden="true">💌</span></h2>
+    <h2 class="section__title" data-i18n="letterTitle">You Have A Letter <span aria-hidden="true">💌</span></h2>
     <div class="envelope" id="envelope">
       <div class="envelope__body">
         <div class="envelope__flap"></div>
@@ -119,57 +129,65 @@
         <span class="envelope__seal" aria-hidden="true">❤</span>
       </div>
     </div>
-    <button class="btn btn--primary" id="openLetterBtn">Open My Letter</button>
+    <button class="btn btn--primary" id="openLetterBtn" data-i18n="openLetter">Open My Letter</button>
   </section>
+
+  <!-- ============ LETTER MODAL ============ -->
+  <div class="letter-modal" id="letterModal">
+    <div class="letter-modal__content">
+      <button class="letter-modal__close" id="letterModalClose" aria-label="Close letter">✕</button>
+      <p class="letter-modal__text" id="letterModalText"></p>
+    </div>
+  </div>
 
   <!-- ============ 7. REASONS ============ -->
   <section class="section section--reasons" id="reasons">
-    <h2 class="section__title">Reasons You're Special To Me <span aria-hidden="true">❤️</span></h2>
-    <div class="reasons-grid" id="reasonsGrid"><!-- populated by JS --></div>
+    <h2 class="section__title" data-i18n="reasonsTitle">Reasons You're Special To Me <span aria-hidden="true">❤️</span></h2>
+    <div class="reasons-grid" id="reasonsGrid"></div>
   </section>
 
   <!-- ============ 8. EMOJI INTERACTION ============ -->
   <section class="section section--emoji">
-    <h2 class="section__title">A Few Things I Want To Say... <span aria-hidden="true">🥰</span></h2>
-    <p class="section__sub">Tap any emoji.</p>
-    <div class="emoji-field" id="emojiField"><!-- populated by JS --></div>
+    <h2 class="section__title" data-i18n="emojiTitle">A Few Things I Want To Say... <span aria-hidden="true">🥰</span></h2>
+    <p class="section__sub" data-i18n="emojiSub">Tap any emoji.</p>
+    <div class="emoji-field" id="emojiField"></div>
     <p class="emoji-message" id="emojiMessage" aria-live="polite">&nbsp;</p>
   </section>
 
   <!-- ============ 9. INTERACTIVE HEART ============ -->
   <section class="section section--heart-tap">
-    <h2 class="section__title">Tap My Heart <span aria-hidden="true">❤️</span></h2>
+    <h2 class="section__title" data-i18n="heartTitle">Tap My Heart <span aria-hidden="true">❤️</span></h2>
     <button class="heart-tap" id="heartTap" aria-label="Tap the heart">
       <span aria-hidden="true">❤</span>
     </button>
-    <p class="heart-tap__count"><span id="heartCount">0</span> taps</p>
+    <p class="heart-tap__count"><span id="heartCount">0</span> <span data-i18n="taps">taps</span></p>
     <p class="heart-tap__msg" id="heartMsg" aria-live="polite">&nbsp;</p>
   </section>
 
   <!-- ============ 10. LOVE COUNTER ============ -->
   <section class="section section--counter" id="loveCounter" hidden>
-    <h2 class="section__title">We've Been Creating Memories For</h2>
+    <h2 class="section__title" data-i18n="counterTitle">We've Been Creating Memories For</h2>
     <div class="counter-grid">
-      <div class="counter-box"><span id="cDays">0</span><small>days</small></div>
-      <div class="counter-box"><span id="cHours">0</span><small>hours</small></div>
-      <div class="counter-box"><span id="cMinutes">0</span><small>minutes</small></div>
-      <div class="counter-box"><span id="cSeconds">0</span><small>seconds</small></div>
+      <div class="counter-box"><span id="cDays">0</span><small data-i18n="days">days</small></div>
+      <div class="counter-box"><span id="cHours">0</span><small data-i18n="hours">hours</small></div>
+      <div class="counter-box"><span id="cMinutes">0</span><small data-i18n="minutes">minutes</small></div>
+      <div class="counter-box"><span id="cSeconds">0</span><small data-i18n="seconds">seconds</small></div>
     </div>
   </section>
 
   <!-- ============ 11. FINAL SURPRISE ============ -->
   <section class="section section--surprise" id="surprise">
     <div class="surprise__pre" id="surprisePre">
-      <h2 class="section__title">One Last Surprise <span aria-hidden="true">🎁</span></h2>
-      <button class="btn btn--primary" id="revealBtn">Reveal It ❤️</button>
+      <h2 class="section__title" data-i18n="surpriseTitle">One Last Surprise <span aria-hidden="true">🎁</span></h2>
+      <button class="btn btn--primary" id="revealBtn" data-i18n="revealBtn">Reveal It ❤️</button>
     </div>
     <div class="surprise__reveal" id="surpriseReveal" hidden>
-      <p class="surprise__lead">If I could give you one thing...</p>
-      <p class="surprise__body">I would give you the ability<br>to see yourself through my eyes.</p>
-      <p class="surprise__body">Then you would finally understand<br>how incredibly special you are to me. ❤️</p>
-      <h3 class="surprise__final">I Love You <span class="heart-glyph">❤</span></h3>
+      <p class="surprise__lead" data-i18n="surpriseLead">If I could give you one thing...</p>
+      <p class="surprise__body" data-i18n="surpriseBody1">I would give you the ability<br>to see yourself through my eyes.</p>
+      <p class="surprise__body" data-i18n="surpriseBody2">Then you would finally understand<br>how incredibly special you are to me. ❤️</p>
+      <h3 class="surprise__final" data-i18n="finalMessage">I Love You <span class="heart-glyph">❤</span></h3>
       <p class="surprise__name" id="herNameFinal">You</p>
-      <p class="surprise__forever">Forever &amp; Always ✨</p>
+      <p class="surprise__forever" data-i18n="forever">Forever &amp; Always ✨</p>
     </div>
   </section>
 
@@ -178,8 +196,8 @@
     <div class="final-photo" id="finalPhoto">
       <img id="finalPhotoImg" alt="A favorite photo of you" />
     </div>
-    <p class="final-photo__caption">My favorite person ❤️</p>
-    <p class="final-photo__thanks">Thank you for being part of my story. 🫶</p>
+    <p class="final-photo__caption" data-i18n="finalCaption">My favorite person ❤️</p>
+    <p class="final-photo__thanks" data-i18n="finalThanks">Thank you for being part of my story. 🫶</p>
   </section>
 
 </main>
@@ -187,26 +205,12 @@
 <!-- ============ SECRET MESSAGE MODAL ============ -->
 <div class="secret-modal" id="secretModal" role="dialog" aria-modal="true" aria-label="Secret message" hidden>
   <div class="secret-modal__card">
-    <p>🤫 You found my secret...</p>
-    <p>I love you more than this website could ever explain. ❤️</p>
-    <button class="btn btn--ghost" id="secretClose">Close</button>
+    <p data-i18n="secretFound">🤫 You found my secret...</p>
+    <p data-i18n="secretMessage">I love you more than this website could ever explain. ❤️</p>
+    <button class="btn btn--ghost" id="secretClose" data-i18n="close">Close</button>
   </div>
 </div>
 
-<!-- ============ MUSIC PLAYER ============ -->
-<div class="music-player" id="musicPlayer">
-  <button class="music-player__toggle" id="musicToggle" aria-label="Play our song" aria-pressed="false">
-    <span class="music-player__icon" aria-hidden="true">🎵</span>
-  </button>
-  <div class="music-player__panel" id="musicPanel">
-    <p class="music-player__title">Our Song</p>
-    <button class="music-player__play" id="musicPlay" aria-label="Play or pause">▶</button>
-    <input type="range" id="musicVolume" min="0" max="1" step="0.01" value="0.6" aria-label="Volume" />
-  </div>
-  <audio id="bgAudio" src="assets/music/romantic-song.mp3" loop preload="none"></audio>
-</div>
-
-<!-- Confetti / heart-burst canvas -->
 <canvas id="fxCanvas" aria-hidden="true"></canvas>
 
 <script src="script.js"></script>
