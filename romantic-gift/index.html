@@ -32,9 +32,14 @@
   <button class="nav__logo" id="secretLogo" aria-label="Site logo, click 5 times for a surprise">
     <span class="nav__logo-heart">❤</span>
   </button>
+  
+  <!-- HAMBURGER MENU BUTTON -->
   <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
-    <span></span><span></span><span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </button>
+  
   <ul class="nav__links" id="navLinks">
     <li><a href="#opening" data-nav data-i18n="navHome">Home</a></li>
     <li><a href="#story" data-nav data-i18n="navMemories">Memories</a></li>
@@ -45,7 +50,7 @@
   </ul>
 </nav>
 
-<!-- ============ MOBILE MENU OVERLAY ============ -->
+<!-- MOBILE OVERLAY -->
 <div class="nav-overlay" id="navOverlay"></div>
 
 <!-- Scroll progress bar -->
@@ -210,6 +215,53 @@
     <button class="btn btn--ghost" id="secretClose" data-i18n="close">Close</button>
   </div>
 </div>
+<!-- ============ FOOTER ============ -->
+<footer class="footer" role="contentinfo" aria-label="Footer">
+  <div class="footer__container">
+    
+    <!-- Brand Area -->
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <span class="footer__heart" aria-hidden="true">❤️</span>
+        <span class="footer__title">For You</span>
+      </div>
+      <p class="footer__tagline">A little love story, made just for you.</p>
+      <div class="footer__hearts" aria-hidden="true">
+        <span>❤</span>
+        <span>💕</span>
+        <span>❤</span>
+        <span>💖</span>
+        <span>❤</span>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <h3 class="footer__nav-title">Quick Links</h3>
+      <ul class="footer__nav-list">
+        <li><a href="#opening" data-nav>Home</a></li>
+        <li><a href="#story" data-nav>Memories</a></li>
+        <li><a href="#gallery" data-nav>Gallery</a></li>
+        <li><a href="#letter" data-nav>Letter</a></li>
+        <li><a href="#reasons" data-nav>Reasons</a></li>
+        <li><a href="#surprise" data-nav>Surprise</a></li>
+      </ul>
+    </nav>
+
+    <!-- Made With Love -->
+    <div class="footer__love">
+      <h3 class="footer__love-title">Made With Love</h3>
+      <p class="footer__love-text">Made with love, just for you. ❤️</p>
+      <p class="footer__copyright">&copy; 2026 For You. Made with ❤️.</p>
+    </div>
+
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="footer__back-top" id="backToTop" aria-label="Back to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+</footer>
 
 <canvas id="fxCanvas" aria-hidden="true"></canvas>
 

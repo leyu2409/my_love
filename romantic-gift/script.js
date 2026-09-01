@@ -13,7 +13,7 @@ const loveConfig = {
     am: "ይህ ትንሽ ድርጣቢያ ለአንተ ብቻ ነው።\n\nምክንያቱም አንዳንድ ጊዜ...\nቃላት ለማብራራት አይበቁም\nአንድ ሰው ምን ያህል ልዩ እንደሆነ። 💕"
   },
 
-  anniversaryDate: "2026-01-01T00:00:00",
+  anniversaryDate: "2026-06-01T00:00:00",
   showLoveCounter: true,
   occasion: "romantic",
 
@@ -23,17 +23,17 @@ const loveConfig = {
   },
 
   photos: [
-  { src: "assets/photos/photo1.jpg", caption: "A beautiful memory ❤️" },
-  { src: "assets/photos/photo2.jpg", caption: "One of my favorite moments with you 🥰" },
-  { src: "assets/photos/photo3.jpg", caption: "This smile is everything. 😊❤️" },
-  { src: "assets/photos/photo4.jpg", caption: "I could look at this all day. 💕" },
-  { src: "assets/photos/photo5.jpg", caption: "Us, just being us. 🥰" },
-  { src: "assets/photos/photo6.jpg", caption: "Every moment with you is special. ❤️" },
-  { src: "assets/photos/photo7.jpg", caption: "A memory I will always treasure. ✨" },
-  { src: "assets/photos/photo8.jpg", caption: "You make every moment brighter. 🌸❤️" },
-  { src: "assets/photos/photo9.jpg", caption: "Forever grateful for this moment. 💖" },
-  { src: "assets/photos/photo10.jpg", caption: "Here’s to many more memories together. 💕🥰" },
-],
+    { src: "assets/photos/photo1.jpg", caption: "A beautiful memory ❤️" },
+    { src: "assets/photos/photo2.jpg", caption: "One of my favorite moments with you 🥰" },
+    { src: "assets/photos/photo3.jpg", caption: "This smile is everything. 😊❤️" },
+    { src: "assets/photos/photo4.jpg", caption: "I could look at this all day. 💕" },
+    { src: "assets/photos/photo5.jpg", caption: "Us, just being us. 🥰" },
+    { src: "assets/photos/photo6.jpg", caption: "Every moment with you is special. ❤️" },
+    { src: "assets/photos/photo7.jpg", caption: "A memory I will always treasure. ✨" },
+    { src: "assets/photos/photo8.jpg", caption: "You make every moment brighter. 🌸❤️" },
+    { src: "assets/photos/photo9.jpg", caption: "Forever grateful for this moment. 💖" },
+    { src: "assets/photos/photo10.jpg", caption: "Here's to many more memories together. 💕🥰" }
+  ],
 
   finalPhotoIndex: 0,
 
@@ -207,6 +207,41 @@ let currentSlideIndex = 0;
 let slideTimer = null;
 let heartTapCount = 0;
 
+// ========== BACK TO TOP FUNCTION ==========
+function setupBackToTop() {
+  const backBtn = document.getElementById('backToTop');
+  if (!backBtn) return;
+
+  function toggleBackToTop() {
+    const scrollY = window.scrollY;
+    if (scrollY > 400) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        toggleBackToTop();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  toggleBackToTop();
+}
+
 // ========== DOM READY ==========
 document.addEventListener("DOMContentLoaded", () => {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -216,24 +251,24 @@ document.addEventListener("DOMContentLoaded", () => {
   applyNames();
   setupHeartField(prefersReducedMotion);
   setupNav();
-  setupMobileMenu();
+  setupMobileMenu(); // Fixed hamburger menu
   setupScrollProgress();
   setupGiftOpening(prefersReducedMotion);
   setupWelcomeTyping();
-  setupTimeline();
   setupGallery();
   setupLightbox();
   setupSlideshow();
   setupLetter();
   setupLetterModal();
-  setupReasons();
-  setupEmojiField();
   setupHeartTap(prefersReducedMotion);
   setupLoveCounter();
   setupSurprise(prefersReducedMotion);
   setupFinalPhoto();
   setupSecretMessage();
   setupCursorEffects(prefersReducedMotion);
+  
+  // Initialize Back to Top
+  setupBackToTop();
 });
 
 // ========== LANGUAGE SYSTEM ==========
@@ -264,7 +299,6 @@ function setupLanguageSwitcher() {
       const lang = btn.dataset.lang;
       if (lang !== currentLang) {
         applyLanguage(lang);
-        // Update letter modal text if open
         const modalText = document.getElementById('letterModalText');
         if (modalText && document.getElementById('letterModal').classList.contains('is-open')) {
           modalText.textContent = loveConfig.letter[currentLang] || loveConfig.letter.en;
@@ -398,6 +432,7 @@ function setupHeartField(reduced) {
   const symbols = ['❤', '💕', '💖', '💗', '💓'];
   const MAX_PARTICLES = window.innerWidth < 768 ? 8 : 15;
   let count = 0;
+  let interval = null; // FIXED: Preventing multiple intervals
 
   function spawn() {
     if (count >= MAX_PARTICLES || document.hidden) return;
@@ -422,41 +457,24 @@ function setupHeartField(reduced) {
     }, duration * 1000);
   }
 
-  const interval = setInterval(spawn, 2000);
+  interval = setInterval(spawn, 2000);
   for (let i = 0; i < 3; i++) setTimeout(spawn, i * 400);
   
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
       clearInterval(interval);
     } else {
-      setInterval(spawn, 2000);
+      if (interval) clearInterval(interval);
+      interval = setInterval(spawn, 2000);
     }
   });
 }
 
-// ========== NAVIGATION ==========
+// ========== NAVIGATION & MOBILE MENU (UNIFIED & FIXED) ==========
 function setupNav() {
-  const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
 
-  toggle.addEventListener('click', () => {
-    const isOpen = links.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.classList.toggle('is-active');
-  });
-
-  links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      if (links.classList.contains('is-open')) {
-        links.classList.remove('is-open');
-        toggle.classList.remove('is-active');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.getElementById('navOverlay').classList.remove('is-active');
-        document.body.style.overflow = '';
-      }
-    });
-  });
-
+  // Active section highlighting
   const sections = [...links.querySelectorAll('a')]
     .map(a => document.querySelector(a.getAttribute('href')))
     .filter(Boolean);
@@ -477,36 +495,57 @@ function setupNav() {
   sections.forEach(s => observer.observe(s));
 }
 
-// ========== MOBILE MENU ==========
 function setupMobileMenu() {
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
   const overlay = document.getElementById('navOverlay');
 
+  if (!toggle || !links) return;
+
+  function isMenuOpen() {
+    return document.body.classList.contains('menu-open');
+  }
+
   function toggleMenu() {
-    const isOpen = links.classList.toggle('is-open');
-    toggle.classList.toggle('is-active');
+    // CSS visibility is driven by body.menu-open, so that's the source of truth.
+    const isOpen = document.body.classList.toggle('menu-open');
+    links.classList.toggle('is-open', isOpen);
+    toggle.classList.toggle('is-active', isOpen);
     toggle.setAttribute('aria-expanded', String(isOpen));
-    overlay.classList.toggle('is-active');
+
+    if (overlay) {
+      overlay.classList.toggle('is-active', isOpen);
+    }
+
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
 
   toggle.addEventListener('click', toggleMenu);
 
-  overlay.addEventListener('click', () => {
-    if (links.classList.contains('is-open')) {
-      toggleMenu();
-    }
+  if (overlay) {
+    overlay.addEventListener('click', () => {
+      if (isMenuOpen()) {
+        toggleMenu();
+      }
+    });
+  }
+
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (isMenuOpen()) {
+        toggleMenu();
+      }
+    });
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && links.classList.contains('is-open')) {
+    if (e.key === 'Escape' && isMenuOpen()) {
       toggleMenu();
     }
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && links.classList.contains('is-open')) {
+    if (window.innerWidth > 768 && isMenuOpen()) {
       toggleMenu();
     }
   });
@@ -579,13 +618,14 @@ function burstParticles(originEl) {
   }
 }
 
-// ========== TYPING ANIMATION ==========
+// ========== TYPING ANIMATION (FIXED text extraction) ==========
 function startTypewriter() {
   const el = document.getElementById('typewriter');
   if (el.dataset.started) return;
   el.dataset.started = 'true';
 
-  const text = el.dataset.text || loveConfig.welcomeMessage.en;
+  // If text isn't already set by the updateDynamicContent, fallback
+  const text = el.dataset.text || loveConfig.welcomeMessage[currentLang] || loveConfig.welcomeMessage.en;
   const cursor = document.createElement('span');
   cursor.className = 'cursor';
   let i = 0;
@@ -605,37 +645,6 @@ function setupWelcomeTyping() {
   document.getElementById('continueBtn').addEventListener('click', () => {
     document.getElementById('story').scrollIntoView({ behavior: 'smooth' });
   });
-}
-
-// ========== TIMELINE ==========
-function setupTimeline() {
-  const lang = currentLang;
-  const items = loveConfig.timeline[lang] || loveConfig.timeline.en;
-  const container = document.getElementById('timeline');
-  
-  items.forEach(item => {
-    const el = document.createElement('div');
-    el.className = 'timeline__item';
-    el.innerHTML = `
-      <div class="timeline__card">
-        <h3>${item.icon} ${escapeHTML(item.title)}</h3>
-        <p>${escapeHTML(item.text)}</p>
-      </div>`;
-    container.appendChild(el);
-  });
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.25 }
-  );
-  container.querySelectorAll('.timeline__item').forEach(el => observer.observe(el));
 }
 
 // ========== GALLERY ==========
@@ -841,47 +850,6 @@ function setupLetterModal() {
     if (e.key === 'Escape' && modal.classList.contains('is-open')) {
       closeLetterModal();
     }
-  });
-}
-
-// ========== REASONS ==========
-function setupReasons() {
-  const lang = currentLang;
-  const reasons = loveConfig.reasons[lang] || loveConfig.reasons.en;
-  const grid = document.getElementById('reasonsGrid');
-  
-  reasons.forEach(reason => {
-    const card = document.createElement('button');
-    card.className = 'reason-card';
-    card.innerHTML = `
-      <span class="reason-card__icon" aria-hidden="true">${reason.icon}</span>
-      <h3>${escapeHTML(reason.title)}</h3>
-      <p>${escapeHTML(reason.text)}</p>`;
-    card.addEventListener('click', () => card.classList.toggle('is-tapped'));
-    grid.appendChild(card);
-  });
-}
-
-// ========== EMOJI FIELD ==========
-function setupEmojiField() {
-  const lang = currentLang;
-  const emojis = loveConfig.emojis[lang] || loveConfig.emojis.en;
-  const field = document.getElementById('emojiField');
-  const message = document.getElementById('emojiMessage');
-
-  emojis.forEach(item => {
-    const btn = document.createElement('button');
-    btn.className = 'emoji-btn';
-    btn.textContent = item.symbol;
-    btn.setAttribute('aria-label', item.symbol);
-    btn.addEventListener('click', (e) => {
-      btn.classList.remove('is-tapped');
-      void btn.offsetWidth;
-      btn.classList.add('is-tapped');
-      message.textContent = `${item.symbol} ${item.message}`;
-      spawnDoubleTapHearts(e.clientX, e.clientY);
-    });
-    field.appendChild(btn);
   });
 }
 
