@@ -563,6 +563,10 @@ body.menu-open .nav__toggle span:nth-child(3) {
   .screen {
     padding: 68px 12px 20px;
   }
+  .screen--welcome {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
   .opening__title {
     font-size: clamp(1.8rem, 8vw, 2.5rem);
   }
@@ -571,6 +575,10 @@ body.menu-open .nav__toggle span:nth-child(3) {
 @media (max-width: 360px) {
   .screen {
     padding: 60px 10px 16px;
+  }
+  .screen--welcome {
+    padding-top: 82px;
+    padding-bottom: 32px;
   }
   .opening__title {
     font-size: clamp(1.5rem, 7vw, 2rem);
@@ -718,6 +726,12 @@ body.menu-open .nav__toggle span:nth-child(3) {
 /* =========================================================
    2. WELCOME
    ========================================================= */
+.screen--welcome {
+  min-height: 0;
+  padding-top: 108px;
+  padding-bottom: 56px;
+}
+
 .welcome__inner {
   max-width: 620px;
   padding: 0 16px;
@@ -2365,4 +2379,19 @@ body.menu-open .nav__toggle span:nth-child(3) {
   .footer__nav-list a::before {
     display: none;
   }
+}
+
+/* ========== FX CANVAS ==========
+   Reserved for future effects; currently unused by script.js.
+   Left unstyled it renders at the browser default 300x150px in
+   normal flow, which was the source of the empty gap under the
+   footer. Take it out of the document flow so it can never add
+   layout height. */
+#fxCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }

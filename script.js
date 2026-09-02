@@ -18,22 +18,41 @@ const loveConfig = {
   occasion: "romantic",
 
   letter: {
-    en: "My Love,\n\nI don't always know how to put my feelings into words, but I want you to know something.\n\nYou are one of the most beautiful parts of my life.\n\nYour smile makes ordinary moments special. Your presence makes difficult days easier. And every memory with you means more to me than I can explain.\n\nThank you for being you.\n\nNo matter how many photos we take, how many memories we create, or how many words I write, I will always have more to say about how special you are to me.\n\nAlways yours,\nMe",
-    am: "ውዷ ልቤ፣\n\nስሜቴን በቃላት እንዴት እንደምገልጽ ሁልጊዜ አላውቅም፣ ግን አንድ ነገር እንድታውቂ እፈልጋለሁ።\n\nአንቺ ከህይወቴ እጅግ በጣም ውብ ከሆኑት ክፍሎች አንዷ ነሽ።\n\nፈገግታሽ ተራ ጊዜያትን ልዩ ያደርጋቸዋል። መገኘትሽ አስቸጋሪ ቀናትን ያቃልላቸዋል። እና ከአንቺ ጋር ያለኝ እያንዳንዱ ትዝታ ከምገልጸው በላይ ዋጋ አለው።\n\nአንቺ ስለሆንሽ አመሰግናለሁ።\n\nምንም ያህል ፎቶዎችን ብንወስድ፣ ምንም ያህል ትዝታዎችን ብንፈጥር፣ ወይም ምንም ያህል ቃላትን ብጽፍ፣ ለአንቺ ምን ያህል ልዩ እንደሆንሽ ለመናገር ሁልጊዜ ተጨማሪ ነገር ይኖረኛል።\n\nሁልጊዜ የአንቺ፣\nእኔ"
+    en: "My Love,\n\nThere are some feelings that words can never fully describe, but tonight, I want to try to put a little piece of my heart into these words.\n\nYou are not just someone I love. You are someone who has become a beautiful part of who I am. Since you came into my life, ordinary moments have felt more meaningful, simple days have felt more beautiful, and my heart has found a reason to smile a little more.\n\nYour smile has a way of making everything around me feel lighter. Your voice brings me a kind of peace that I cannot explain. Your presence makes even the quietest moments feel special. And whenever I think about the memories we have created together, I realize how lucky I am to have someone as precious as you in my life.\n\nI love the little things about you—the way you smile, the way you speak, the way you make moments unforgettable without even trying. I love the person you are, and I hope you always remember just how deeply you are loved and appreciated.\n\nThank you for every smile, every conversation, every beautiful memory, and every moment we have shared. Thank you for simply being you. You may never truly know how much happiness your existence has brought into my life.\n\nIf I could give you one thing, it would be the ability to see yourself through my eyes, just for a moment. Then you would understand how beautiful, precious, and irreplaceable you are to me.\n\nNo matter how many photos we take, how many memories we create, or how many love letters I write, I know I will never run out of reasons to love you. There will always be another memory to treasure, another smile to admire, and another reason to fall for you all over again.\n\nI don't know what the future will bring, but I know one thing—I want many more beautiful moments with you. More smiles. More laughter. More memories. More days where I can look at you and quietly think, \"I am so lucky to have you.\"\n\nYou are a beautiful chapter in my story, a precious memory in my heart, and a person I will always be grateful for.\n\nI love you more than these words can ever explain.\n\nAlways yours,\nMe ❤️",
+    am: "ውዷ ልቤ፣\n\nአንዳንድ ስሜቶች በቃላት ሙሉ በሙሉ ሊገለጹ አይችሉም፣ ግን ዛሬ ማታ ከልቤ የሆነውን ትንሽ ክፍል በእነዚህ ቃላት ለማስቀመጥ እፈልጋለሁ።\n\nአንቺ የምወድሽ ሰው ብቻ አይደለሽም። የራሴ አካል የሆነች፣ በህይወቴ ውስጥ ውብ ስፍራ የያዝሽ ሰው ነሽ። ወደ ህይወቴ ከመጣሽ ጀምሮ ተራ ጊዜያት ትርጉም ያላቸው ሆነዋል፣ ቀላል ቀናትም የበለጠ ውብ ሆነዋል፣ ልቤም ትንሽ ተጨማሪ ምክንያት እንዲስቅ አግኝቷል።\n\nፈገግታሽ በዙሪያዬ ያለውን ሁሉ ቀለል እንዲል የሚያደርግ ልዩ ነገር አለው። ድምፅሽም በቃላት ልገልጸው የማልችለውን ሰላም ይሰጠኛል። መገኘትሽ ጸጥ ያሉ ጊዜያትን እንኳን ልዩ ያደርጋቸዋል። እና አብረን የፈጠርናቸውን ትዝታዎች ሳስብ፣ እንደ አንቺ ያለች ውድ ሰው በህይወቴ ስላለች ምን ያህል እድለኛ እንደሆንኩ እገነዘባለሁ።\n\nስለ አንቺ ያሉትን ትንንሽ ነገሮች እወዳቸዋለሁ—አገላለጽሽን፣ አነጋገርሽን፣ ሳትሞክሪ እንኳን ጊዜያትን የማይረሱ ማድረግሽን። የሆንሽውን ሰው እወዳለሁ፣ እናም ምን ያህል እንደምወድሽና እንደማደንቅሽ ሁልጊዜ እንድታስታውሺ እፈልጋለሁ።\n\nለሁሉም ፈገግታዎችሽ፣ ለእያንዳንዱ ውይይታችን፣ ለሁሉም ውብ ትዝታዎችና አብረን ላሳለፍናቸው ጊዜያት አመሰግናለሁ። በቀላሉ አንቺ ስለሆንሽ አመሰግናለሁ። የመኖርሽ ብቻ በህይወቴ ምን ያህል ደስታን እንዳመጣ ምናልባት ሙሉ በሙሉ ልታውቂው አትችይም።\n\nአንድ ነገር ልሰጥሽ ብችል፣ ራስሽን በእኔ ዓይን እንድታዪ የሚያስችልሽን ችሎታ እሰጥሽ ነበር—ለአንድ አፍታ ብቻ። ያኔ ለእኔ ምን ያህል ውብ፣ ውድ እና ልዩ እንደሆንሽ ትረዺ ነበር።\n\nምንም ያህል ፎቶዎችን ብንወስድ፣ ምንም ያህል ትዝታዎችን ብንፈጥር፣ ወይም ምንም ያህል የፍቅር ደብዳቤዎችን ብጽፍ፣ ለአንቺ የምወድሽባቸው ምክንያቶች ፈጽሞ አያልቁም። ሁልጊዜ ልወደው የምችለው አዲስ ትዝታ፣ ልመለከተው የምፈልገው ሌላ ፈገግታ እና እንደገና በአንቺ እንድወድ የሚያደርገኝ ሌላ ምክንያት ሁልጊዜ ይኖራል።\n\nወደፊት ምን እንደሚጠብቀን አላውቅም፣ ግን አንድ ነገር አውቃለሁ—ከአንቺ ጋር ብዙ ተጨማሪ ውብ ጊዜያትን ማሳለፍ እፈልጋለሁ። ብዙ ፈገግታዎች፣ ብዙ ሳቅ፣ ብዙ ትዝታዎች፣ እና አንቺን እያየሁ በልቤ በጸጥታ፣ “አንቺን በማግኘቴ በጣም እድለኛ ነኝ” የምልባቸው ብዙ ቀናት።\n\nአንቺ በታሪኬ ውስጥ ውብ ምዕራፍ፣ በልቤ ውስጥ ውድ ትዝታ፣ እና ሁልጊዜ የማመሰግነው ሰው ነሽ።\n\nፍቅሬን እነዚህ ቃላት ሊገልጹት ከሚችሉት በላይ ሁልጊዜ አፈቅርሻላዉ።\n\nሁልጊዜ የአንቺ፣\nእኔ ❤️"
   },
 
   photos: [
-    { src: "assets/photos/photo1.jpg", caption: "A beautiful memory ❤️" },
-    { src: "assets/photos/photo2.jpg", caption: "One of my favorite moments with you 🥰" },
-    { src: "assets/photos/photo3.jpg", caption: "This smile is everything. 😊❤️" },
-    { src: "assets/photos/photo4.jpg", caption: "I could look at this all day. 💕" },
-    { src: "assets/photos/photo5.jpg", caption: "Us, just being us. 🥰" },
-    { src: "assets/photos/photo6.jpg", caption: "Every moment with you is special. ❤️" },
-    { src: "assets/photos/photo7.jpg", caption: "A memory I will always treasure. ✨" },
-    { src: "assets/photos/photo8.jpg", caption: "You make every moment brighter. 🌸❤️" },
-    { src: "assets/photos/photo9.jpg", caption: "Forever grateful for this moment. 💖" },
-    { src: "assets/photos/photo10.jpg", caption: "Here's to many more memories together. 💕🥰" }
-  ],
+  { src: "assets/photos/photo1.jpg", caption: "A beautiful memory with my favorite person. ❤️" },
+
+  { src: "assets/photos/photo2.jpg", caption: "One of my favorite moments with you. 🥰💕" },
+
+  { src: "assets/photos/photo3.jpg", caption: "That smile will always have my heart. 😊❤️" },
+
+  { src: "assets/photos/photo4.jpg", caption: "I could look at you like this forever. 💕✨" },
+
+  { src: "assets/photos/photo5.jpg", caption: "Us, just being us — and I love it. 🥰❤️" },
+
+  { src: "assets/photos/photo6.jpg", caption: "Every moment with you becomes a precious memory. ❤️✨" },
+
+  { src: "assets/photos/photo7.jpg", caption: "A memory I will treasure in my heart forever. 💖" },
+
+  { src: "assets/photos/photo8.jpg", caption: "You have a way of making every moment brighter. 🌸❤️" },
+
+  { src: "assets/photos/photo9.jpg", caption: "Forever grateful for this beautiful moment with you. 💕" },
+
+  { src: "assets/photos/photo10.jpg", caption: "Here's to this moment and all the memories still to come. 🥰✨" },
+
+  { src: "assets/photos/photo11.jpg", caption: "Every picture of you gives my heart another reason to smile. ❤️😊" },
+
+  { src: "assets/photos/photo12.jpg", caption: "Your gentle and humble heart is one of the things I cherish most about you. 💖✨" },
+
+  { src: "assets/photos/photo13.jpg", caption: "A beautiful reminder of the blessing God has placed in my life. 🙏❤️✨" },
+
+  { src: "assets/photos/photo14.jpg", caption: "This is me, with a heart full of love and gratitude for you. ❤️🙏✨" },
+
+  { src: "assets/photos/photo15.jpg", caption: "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨" }
+],
 
   finalPhotoIndex: 0,
 
@@ -52,57 +71,72 @@ const loveConfig = {
     ]
   },
 
-  reasons: {
-    en: [
-      { icon: "😊", title: "Your Smile", text: "Because it can instantly make my day better." },
-      { icon: "🥰", title: "Your Personality", text: "You have something about you that is impossible to replace." },
-      { icon: "❤️", title: "Your Heart", text: "You care deeply, and that's beautiful." },
-      { icon: "✨", title: "Your Presence", text: "Everything feels a little better when you're around." },
-      { icon: "🌹", title: "Simply You", text: "I don't need a reason. I just love you." }
-    ],
-    am: [
-      { icon: "😊", title: "ፈገግታሽ", text: "ምክንያቱም ቀኔን ወዲያውኑ ሊያሻሽል ይችላል።" },
-      { icon: "🥰", title: "ባህርይሽ", text: "አንቺ ልትተካ የማትችል ነገር አለሽ።" },
-      { icon: "❤️", title: "ልብሽ", text: "በጥልቅ ትቆረቆሪያለሽ፣ ያ ደግሞ ውብ ነው።" },
-      { icon: "✨", title: "መገኘትሽ", text: "አንቺ በምትኖሪ ጊዜ ሁሉም ነገር የተሻለ ይሰማል።" },
-      { icon: "🌹", title: "አንቺ ብቻሽ", text: "ምክንያት አያስፈልገኝም። እወድሻለሁ።" }
-    ]
-  },
+  reasons: { 
+    en: [ 
+    { icon: "😊", title: "Your Smile", text: "Your smile reaches a place in my heart that nothing else can. Whenever I see it, I quietly thank God for giving me a reason to smile too. ❤️🙏" }, 
+    { icon: "🥰", title: "Your Gentle Heart", text: "Your gentleness is one of the things I treasure most about you. In a world that can be harsh, your soft and kind heart reminds me that beautiful souls still exist. 🥰❤️" }, 
+    { icon: "❤️", title: "Your Humility", text: "I love the humility in you. You don't need to prove how special you are; the way you treat people, speak, and carry yourself says enough. It is a quality I deeply respect. 🙏❤️" }, 
+    { icon: "✨", title: "Your Character", text: "What makes me love you isn't only what I see on the outside. It is your character, your kindness, your patience, and the beautiful person you are when no one is watching. ✨❤️" }, 
+    { icon: "🌹", title: "Your Presence", text: "When you are around, my heart feels a kind of peace that is difficult to explain. Your presence has become one of the quiet blessings I am most grateful for. 🌹🙏" }, 
+    { icon: "🙏", title: "Your Faith", text: "I admire the part of you that seeks God. I pray that your faith continues to grow and that God guides your steps, protects your heart, and blesses the life ahead of you. 🙏❤️" }, 
+    { icon: "🫶", title: "Your Kindness", text: "The way you care for others tells me so much about the heart you carry. Your kindness is not something I simply notice; it is something I deeply cherish. 🫶❤️" }, 
+    { icon: "💖", title: "The Way You Make Me Feel", text: "You make me feel grateful, peaceful, and hopeful. Somehow, having you in my life makes me want to become a better person and love with a more sincere heart. 💖🙏" }, 
+    { icon: "🌸", title: "Your Soul", text: "There is something beautiful about your soul that goes beyond words. The more I know you, the more I realize that your beauty comes from who you are, not simply from how you look. 🌸❤️" }, 
+    { icon: "💫", title: "God's Timing", text: "Sometimes I wonder how our paths crossed at exactly the right time. I don't know everything God has planned, but I know I am grateful that He allowed you to become part of my story. 💫🙏" }, 
+    { icon: "🌹", title: "Simply You", text: "I could give you a hundred reasons, but the deepest truth is simple: I love you for who you are. Not because you are perfect, but because your heart is precious to me. ❤️🌹" }
+   ], 
+   
+  am: [ 
+    { icon: "😊", title: "ፈገግታሽ", text: "ፈገግታሽ ልቤ ውስጥ ማንም ሊደርስበት የማይችል ቦታ ይደርሳል። ባየሁት ቁጥር እኔም ፈገግ የምልበትን ምክንያት ስለሰጠኝ እግዚአብሔርን በጸጥታ አመሰግናለሁ። ❤️🙏" }, 
+    { icon: "🥰", title: "የዋህ ልብሽ", text: "ከሁሉ በላይ ከምወዳቸው ነገሮች አንዱ የዋህነትሽ ነው። ዓለም አንዳንድ ጊዜ ጨካኝ ስትሆን፣ የዋህና ደግ ልብ ያላቸው ውብ ሰዎች እንዳሉ አንቺ ታስታውሺኛለሽ። 🥰❤️" }, 
+    { icon: "❤️", title: "ትሕትናሽ", text: "በአንቺ ውስጥ ያለውን ትሕትና በጣም እወደዋለሁ። ምን ያህል ልዩ እንደሆንሽ ለማሳየት ምንም ማስመሰል አያስፈልግሽም፤ ሰዎችን የምትይዝበት መንገድና ራስሽን የምትመራበት መንገድ በቂ ይናገራል። ይህም በጣም የማከብርሽ ባህርይ ነው። 🙏❤️" }, 
+    { icon: "✨", title: "ባህርይሽ", text: "የምወድሽ በውጫዊ ውበትሽ ብቻ አይደለም። የምወደው ባህርይሽን፣ ቸርነትሽን፣ ትዕግሥትሽን እና ማንም በማያይበት ጊዜም የምትሆኚውን ውብ ሰው ነው። ✨❤️" }, 
+    { icon: "🌹", title: "መገኘትሽ", text: "አንቺ በአጠገቤ ስትኖሪ ልቤ ለመግለጽ የሚከብደውን ሰላም ያገኛል። መገኘትሽ በጣም ከማመሰግናቸው የሕይወቴ ጸጥ ያሉ በረከቶች አንዱ ሆኗል። 🌹🙏" }, 
+    { icon: "🙏", title: "እምነትሽ", text: "እግዚአብሔርን የምትፈልጊበትን መንፈስ አደንቃለሁ። እምነትሽ እየጠነከረ እንዲሄድ፣ እግዚአብሔርም እርምጃዎችሽን እንዲመራ፣ ልብሽን እንዲጠብቅ እና የወደፊት ሕይወትሽን እንዲባርክ እጸልያለሁ። 🙏❤️" }, 
+    { icon: "🫶", title: "ቸርነትሽ", text: "ለሌሎች የምታስቢበትና የምትቆረቆሪበት መንገድ ስለ ያለሽን ልብ ብዙ ይናገራል። ቸርነትሽን ብቻ አላስተውልም፤ ከልቤ እከብረዋለሁ። 🫶❤️" }, 
+    { icon: "💖", title: "በአንቺ ምክንያት", text: "አንቺ እንደምልት የምትሰጪኝ ስሜት ምስጋናን፣ ሰላምን እና ተስፋን ነው። በሕይወቴ መኖርሽ የተሻለ ሰው እንድሆን እና በበለጠ እውነተኛ ልብ እንድወድ ያነሳሳኛል። 💖🙏" }, 
+    { icon: "🌸", title: "ነፍስሽ", text: "በነፍስሽ ውስጥ በቃላት ለመግለጽ የሚከብድ ውበት አለ። እያወቅሁሽ በሄድኩ ቁጥር ውበትሽ በመልክሽ ብቻ ሳይሆን በማንነትሽ ውስጥ እንዳለ የበለጠ እገነዘባለሁ። 🌸❤️" }, 
+    { icon: "💫", title: "የእግዚአብሔር ጊዜ", text: "አንዳንድ ጊዜ መንገዳችን በትክክለኛው ጊዜ እንዴት እንደተገናኘ እገረማለሁ። እግዚአብሔር ስላዘጋጀልን ሁሉን አላውቅም፤ ነገር ግን ወደ ታሪኬ እንድትገቢ ስለፈቀደልኝ በጣም አመሰግናለሁ። 💫🙏" }, 
+    { icon: "🌹", title: "አንቺ ብቻ", text: "መቶ ምክንያቶችን መዘርዘር እችላለሁ፤ ግን ከሁሉ ጥልቅ የሆነው እውነት ቀላል ነው፦ ስለሆንሽው ሰው እወድሻለሁ። ፍጹም ስለሆንሽ አይደለም፤ ልብሽ ለእኔ ውድ ስለሆነ ነው። ❤️🌹" } ] },
 
+
+  
   emojis: {
-    en: [
-      { symbol: "❤️", message: "You have my heart." },
-      { symbol: "🥰", message: "You make me smile." },
-      { symbol: "😘", message: "Sending you a kiss." },
-      { symbol: "💕", message: "Every day, a little more." },
-      { symbol: "🌹", message: "You are beautiful." },
-      { symbol: "✨", message: "You make my life brighter." },
-      { symbol: "🫶", message: "Always here for you." },
-      { symbol: "😊", message: "You're my favorite reason to smile." },
-      { symbol: "💖", message: "Endlessly grateful for you." },
-      { symbol: "🌸", message: "Gentle, like you." },
-      { symbol: "💋", message: "One for you." }
-    ],
-    am: [
-      { symbol: "❤️", message: "ልቤ የአንቺ ነው።" },
-      { symbol: "🥰", message: "ታስቂኛለሽ።" },
-      { symbol: "😘", message: "ሳምሻለሁ።" },
-      { symbol: "💕", message: "በየቀኑ ትንሽ ተጨማሪ።" },
-      { symbol: "🌹", message: "አንቺ ውብ ነሽ።" },
-      { symbol: "✨", message: "ህይወቴን ታበሪሻለሽ።" },
-      { symbol: "🫶", message: "ሁልጊዜ ለአንቺ እዚህ ነኝ።" },
-      { symbol: "😊", message: "አንቺ የፈገግታ ተወዳጅ ምክንያቴ ነሽ።" },
-      { symbol: "💖", message: "ለአንቺ ማለቂያ የሌለው አመስጋኝ ነኝ።" },
-      { symbol: "🌸", message: "ለስላሳ፣ ልክ እንደ አንቺ።" },
-      { symbol: "💋", message: "አንድ ሳም ለአንቺ።" }
-    ]
-  },
+     en: [ 
+      { symbol: "❤️", message: "I believe God knew exactly what He was doing when He brought you into my life. You are a blessing my heart will never take for granted. 🙏❤️" }, 
+      { symbol: "🥰", message: "Your gentle smile brings a peace to my heart that words cannot fully describe. I thank God for the beautiful soul behind that smile. 🥰🙏" }, 
+      { symbol: "😘", message: "If I were beside you right now, I would simply hold you close and thank God for giving me another moment with someone so precious. ❤️🫶" }, 
+      { symbol: "💕", message: "Every day, I find another reason to love and appreciate you. I pray that God continues to guide our hearts with patience, kindness, and genuine love. 🙏💕" }, 
+      { symbol: "🌹", message: "Your beauty is not only what my eyes see; it is the kindness, humility, and gentle heart within you that makes you truly beautiful to me. 🌹❤️" }, 
+      { symbol: "✨", message: "You are one of those blessings that reminds me that God's timing is greater than our plans. Having you in my life is something I quietly thank Him for. ✨🙏" }, 
+      { symbol: "🫶", message: "I don't just want to be someone who loves you in beautiful moments; I want to be someone who stands beside you, prays for you, supports you, and respects the heart God gave you. 🫶❤️🙏" }, 
+      { symbol: "😊", message: "Your happiness means more to me than simply seeing you smile. I pray that God protects your heart, gives you peace, and fills your life with countless reasons to smile. 😊🙏❤️" }, 
+      { symbol: "💖", message: "If God allows our paths to continue together, I hope our love will always be built on faith, respect, patience, honesty, and a heart that seeks Him first. 💖🙏" }, 
+      { symbol: "🌸", message: "You have such a gentle and humble spirit, and that is one of the things I treasure most about you. May God always protect that beautiful heart. 🌸🙏❤️" }, 
+      { symbol: "💋", message: "More than anything, I want my love for you to be pure and meaningful—something that brings peace to your heart and reminds you that you are deeply valued. ❤️🙏🫶" } ], 
+  
+    am: [ 
+      { symbol: "❤️", message: "እግዚአብሔር ወደ ሕይወቴ እንድትገቢ ያደረገው ምክንያት እንዳለው አምናለሁ። አንቺ ልቤ ፈጽሞ የማይንቀው ውድ በረከት ነሽ። 🙏❤️" }, 
+      { symbol: "🥰", message: "የዋህ ፈገግታሽ በቃላት ለመግለጽ የማልችለውን ሰላም በልቤ ውስጥ ይፈጥራል። ከዚያ ፈገግታ ጀርባ ላለው ውብ ነፍስሽ እግዚአብሔርን አመሰግናለሁ። 🥰🙏" }, 
+      { symbol: "😘", message: "አሁን ከጎንሽ ብሆን ኖሮ፣ በቀላሉ አቅፌሽ እና እንደ አንቺ ያለች ውድ ሰው በሕይወቴ ስለሰጠኝ እግዚአብሔርን አመሰግን ነበር። ❤️🫶" }, 
+      { symbol: "💕", message: "በየቀኑ አንቺን የምወድበትና የማደንቅበት አዲስ ምክንያት አገኛለሁ። እግዚአብሔር ልባችንን በትዕግሥት፣ በቸርነት እና በእውነተኛ ፍቅር እንዲመራ እጸልያለሁ። 🙏💕" }, 
+      { symbol: "🌹", message: "ውበትሽ ዓይኖቼ በሚያዩት ብቻ አይደለም፤ በውስጥሽ ያለው ቸርነት፣ ትሕትና እና የዋህ ልብሽ እውነተኛ ውበትሽ ነው። 🌹❤️" }, 
+      { symbol: "✨", message: "አንቺ እግዚአብሔር ጊዜውን ከእኛ እቅድ በላይ በጥበቡ እንደሚያውቅ የምታስታውሺኝ በረከት ነሽ። በሕይወቴ ውስጥ ስላለሽ በጸጥታ እግዚአብሔርን አመሰግናለሁ። ✨🙏" }, 
+      { symbol: "🫶", message: "በደስታ ጊዜ ብቻ የሚወድሽ ሰው መሆን አልፈልግም፤ ከጎንሽ የሚቆም፣ ለአንቺ የሚጸልይ፣ የሚደግፍሽ እና እግዚአብሔር የሰጠሽን ውድ ልብ የሚያከብር ሰው መሆን እፈልጋለሁ። 🫶❤️🙏" }, 
+      { symbol: "😊", message: "ደስታሽ ለእኔ ፈገግታሽን ከማየት የበለጠ ትርጉም አለው። እግዚአብሔር ልብሽን ይጠብቅ፣ ሰላም ይስጥሽ እና ፈገግ የምትዪበትን ብዙ ምክንያቶች ይስጥሽ። 😊🙏❤️" }, 
+      { symbol: "💖", message: "እግዚአብሔር አብረን እንድንጓዝ ከፈቀደ፣ ፍቅራችን ሁልጊዜ በእምነት፣ በክብር፣ በትዕግሥት፣ በእውነት እና እግዚአብሔርን ከሁሉ በፊት በሚያስቀምጥ ልብ ላይ እንዲመሠረት እመኛለሁ። 💖🙏" }, 
+      { symbol: "🌸", message: "በአንቺ ውስጥ ያለው የዋህነትና ትሕትና ከሁሉ በላይ የምወደውና የምከብረው ነገር ነው። እግዚአብሔር ያንን ውብ ልብሽን ሁልጊዜ ይጠብቅልሽ። 🌸🙏❤️" }, 
+      { symbol: "💋", message: "ከሁሉ በላይ ፍቅሬ ንጹሕና ትርጉም ያለው እንዲሆን እፈልጋለሁ፤ በልብሽ ውስጥ ሰላምን የሚያመጣ እና ምን ያህል ውድና ተከባሪ እንደሆንሽ የሚያስታውስሽ ፍቅር። ❤️🙏🫶" } ] 
+},
+  
+finalMessage: {
 
-  finalMessage: {
-    en: "I Love You",
-    am: "እወድሻለሁ"
-  }
-};
+    en: "You Have My Heart, Today, Tomorrow, Always. I Love You. ❤️💋",
+
+    am: "ልቤ የአንቺ ነው፤ ዛሬ፣ ነገም ሁልጊዜ። እወድሻለሁ። ❤️💋"
+
+},
+  };
 
 // Occasion tweaks
 if (loveConfig.occasion === "birthday") {
@@ -863,7 +897,7 @@ function setupHeartTap(reduced) {
   const milestones = [
     [1, currentLang === 'am' ? '❤️ ልቤ የአንቺ ነው።' : '❤️ My heart chooses you.'],
     [5, currentLang === 'am' ? 'ደጋግመሽ ትመጪያለሽ። 🥰' : 'You keep coming back for more. 🥰'],
-    [15, currentLang === 'am' ? 'እሺ... ልቤን ሙሉ በሙሉ ሰረቅሽው ይመስለኛል። 😂❤️' : 'Okay... I think you\'ve stolen my heart completely. 😂❤️'],
+    [15, currentLang === 'am' ? 'እሺ... ልቤን ሙሉ በሙሉ የሰረቅሽው ይመስለኛል። 😂❤️' : 'Okay... I think you\'ve stolen my heart completely. 😂❤️'],
     [30, currentLang === 'am' ? 'በዚህ ነጥብ ላይ በይፋ የአንቺ ነው። 💍😆' : 'At this point it\'s officially, legally yours. 💍😆']
   ];
 
