@@ -10,7 +10,7 @@ const loveConfig = {
 
   welcomeMessage: {
     en: "This little website is just for you.\n\nBecause sometimes...\nwords aren't enough to explain\nhow special someone is. 💕",
-    am: "ይህ ትንሽ ድርጣቢያ ለአንተ ብቻ ነው።\n\nምክንያቱም አንዳንድ ጊዜ...\nቃላት ለማብራራት አይበቁም\nአንድ ሰው ምን ያህል ልዩ እንደሆነ። 💕"
+    am: "ይህ ትንሽ ድረ ገጽ ለአንቺ ብቻ ነው።\n\nምክንያቱም አንዳንድ ጊዜ...\nቃላት ለማብራራት አይበቁም\nአንድ ሰው ምን ያህል ልዩ እንደሆነ። 💕"
   },
 
   anniversaryDate: "2026-06-01T00:00:00",
@@ -19,7 +19,7 @@ const loveConfig = {
 
   letter: {
     en: "My Love,\n\nI don't always know how to put my feelings into words, but I want you to know something.\n\nYou are one of the most beautiful parts of my life.\n\nYour smile makes ordinary moments special. Your presence makes difficult days easier. And every memory with you means more to me than I can explain.\n\nThank you for being you.\n\nNo matter how many photos we take, how many memories we create, or how many words I write, I will always have more to say about how special you are to me.\n\nAlways yours,\nMe",
-    am: "ውዷ ልቤ፣\n\nስሜቴን በቃላት እንዴት እንደምገልጽ ሁልጊዜ አላውቅም፣ ግን አንድ ነገር እንድታውቂ እፈልጋለሁ።\n\nአንቺ ከህይወቴ እጅግ በጣም ውብ ከሆኑት ክፍሎች አንዷ ነሽ።\n\nፈገግሻሽ ተራ ጊዜያትን ልዩ ያደርጋቸዋል። መገኘትሽ አስቸጋሪ ቀናትን ያቃልላቸዋል። እና ከአንቺ ጋር ያለኝ እያንዳንዱ ትዝታ ከምገልጸው በላይ ዋጋ አለው።\n\nአንቺ እንደሆንሽ ስለሆንሽ እናመሰግናለን።\n\nምንም ያህል ፎቶዎችን ብንወስድ፣ ምንም ያህል ትዝታዎችን ብንፈጥር፣ ወይም ምንም ያህል ቃላትን ብጽፍ፣ ለአንቺ ምን ያህል ልዩ እንደሆንሽ ለመናገር ሁልጊዜ ተጨማሪ ነገር ይኖረኛል።\n\nሁልጊዜ የአንቺ፣\nእኔ"
+    am: "ውዷ ልቤ፣\n\nስሜቴን በቃላት እንዴት እንደምገልጽ ሁልጊዜ አላውቅም፣ ግን አንድ ነገር እንድታውቂ እፈልጋለሁ።\n\nአንቺ ከህይወቴ እጅግ በጣም ውብ ከሆኑት ክፍሎች አንዷ ነሽ።\n\nፈገግታሽ ተራ ጊዜያትን ልዩ ያደርጋቸዋል። መገኘትሽ አስቸጋሪ ቀናትን ያቃልላቸዋል። እና ከአንቺ ጋር ያለኝ እያንዳንዱ ትዝታ ከምገልጸው በላይ ዋጋ አለው።\n\nአንቺ ስለሆንሽ አመሰግናለሁ።\n\nምንም ያህል ፎቶዎችን ብንወስድ፣ ምንም ያህል ትዝታዎችን ብንፈጥር፣ ወይም ምንም ያህል ቃላትን ብጽፍ፣ ለአንቺ ምን ያህል ልዩ እንደሆንሽ ለመናገር ሁልጊዜ ተጨማሪ ነገር ይኖረኛል።\n\nሁልጊዜ የአንቺ፣\nእኔ"
   },
 
   photos: [
@@ -61,9 +61,9 @@ const loveConfig = {
       { icon: "🌹", title: "Simply You", text: "I don't need a reason. I just love you." }
     ],
     am: [
-      { icon: "😊", title: "ፈገግሻሽ", text: "ምክንያቱም ቀኔን ወዲያውኑ ሊያሻሽል ይችላል።" },
+      { icon: "😊", title: "ፈገግታሽ", text: "ምክንያቱም ቀኔን ወዲያውኑ ሊያሻሽል ይችላል።" },
       { icon: "🥰", title: "ባህርይሽ", text: "አንቺ ልትተካ የማትችል ነገር አለሽ።" },
-      { icon: "❤️", title: "ልብሽ", text: "በጥልቅ ትጨነቂያለሽ፣ ያ ደግሞ ውብ ነው።" },
+      { icon: "❤️", title: "ልብሽ", text: "በጥልቅ ትቆረቆሪያለሽ፣ ያ ደግሞ ውብ ነው።" },
       { icon: "✨", title: "መገኘትሽ", text: "አንቺ በምትኖሪ ጊዜ ሁሉም ነገር የተሻለ ይሰማል።" },
       { icon: "🌹", title: "አንቺ ብቻሽ", text: "ምክንያት አያስፈልገኝም። እወድሻለሁ።" }
     ]
@@ -85,7 +85,7 @@ const loveConfig = {
     ],
     am: [
       { symbol: "❤️", message: "ልቤ የአንቺ ነው።" },
-      { symbol: "🥰", message: "ታስስቂኛለሽ።" },
+      { symbol: "🥰", message: "ታስቂኛለሽ።" },
       { symbol: "😘", message: "ሳምሻለሁ።" },
       { symbol: "💕", message: "በየቀኑ ትንሽ ተጨማሪ።" },
       { symbol: "🌹", message: "አንቺ ውብ ነሽ።" },
@@ -93,7 +93,7 @@ const loveConfig = {
       { symbol: "🫶", message: "ሁልጊዜ ለአንቺ እዚህ ነኝ።" },
       { symbol: "😊", message: "አንቺ የፈገግታ ተወዳጅ ምክንያቴ ነሽ።" },
       { symbol: "💖", message: "ለአንቺ ማለቂያ የሌለው አመስጋኝ ነኝ።" },
-      { symbol: "🌸", message: "ልስላሴ፣ ልክ እንደ አንቺ።" },
+      { symbol: "🌸", message: "ለስላሳ፣ ልክ እንደ አንቺ።" },
       { symbol: "💋", message: "አንድ ሳም ለአንቺ።" }
     ]
   },
@@ -165,14 +165,14 @@ const translations = {
     navReasons: "ምክንያቶች",
     navSurprise: "አስገራሚ",
     eyebrow: "✨ ልዩ ነገር ሠራሁልሽ ✨",
-    openingTitle: 'ለአንቺ እጅግ<br>ውብ<br>ለሆነች ሰው <span class="heart-glyph">❤</span>',
+    openingTitle: 'በህይወቴ ውስጥ<br>እጅግ ውብ<br>ለሆነች ሰው <span class="heart-glyph">❤</span>',
     openGift: "ስጦታሽን ክፈቺ 🎁",
     giftHint: "(ሳጥኑን ወይም አዝራሩን ተንኩዪ)",
     welcomeHey: "ሰላም",
-    continueStory: "ታሪካችንን ቀጥል → ❤️",
+    continueStory: "ታሪካችንን ቀጥዪ → ❤️",
     timelineTitle: 'ትናንሽ ጊዜያት፣ ትላልቅ ትዝታዎች <span aria-hidden="true">💕</span>',
     galleryTitle: 'ውብ ትዝታዎቻችን <span aria-hidden="true">📸❤️</span>',
-    gallerySub: "ማንኛውንም ፎቶ ለማየት ይንኩት። ለፍቅር ሁለት ጊዜ ይንኩት።",
+    gallerySub: "ማንኛውንም ፎቶ በቅርበት ለማየት ንኪው። ለትንሽ ፍቅር ሁለት ጊዜ ንኪው።",
     slideshowTitle: 'ትንሽ የእኛ ፊልም <span aria-hidden="true">🎞️</span>',
     letterTitle: 'ደብዳቤ አለሽ <span aria-hidden="true">💌</span>',
     openLetter: "ደብዳቤዬን ክፈቺ",
@@ -187,17 +187,17 @@ const translations = {
     minutes: "ደቂቃዎች",
     seconds: "ሰከንዶች",
     surpriseTitle: 'የመጨረሻ አስገራሚ <span aria-hidden="true">🎁</span>',
-    revealBtn: "ግለጽ ❤️",
+    revealBtn: "ግለጺ ❤️",
     surpriseLead: "አንድ ነገር ልሰጥሽ ብችል...",
     surpriseBody1: "በአይኔ ራስሽን<br>የምታይበትን ችሎታ እሰጥሻለሁ።",
     surpriseBody2: "ከዚያ በኋላ በመጨረሻ<br>ለእኔ ምን ያህል ልዩ እንደሆንሽ ትገነዘቢያለሽ። ❤️",
     finalMessage: 'እወድሻለሁ <span class="heart-glyph">❤</span>',
     forever: "ለዘላለም & ሁልጊዜ ✨",
     finalCaption: "የኔ ተወዳጅ ሰው ❤️",
-    finalThanks: "በታሪኬ ውስጥ ስለነበርሽ እናመሰግናለን። 🫶",
+    finalThanks: "በታሪኬ ውስጥ ስለነበርሽ አመሰግናለሁ። 🫶",
     secretFound: "🤫 ሚስጥሬን አገኘሽ...",
-    secretMessage: "ይህ ድርጣቢያ ሊገልጸው ከሚችለው በላይ እወድሻለሁ። ❤️",
-    close: "ዝጋ"
+    secretMessage: "ይህ ድረ ገጽ ሊገልጸው ከሚችለው በላይ እወድሻለሁ። ❤️",
+    close: "ዝጊ"
   }
 };
 
