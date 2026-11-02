@@ -125,7 +125,6 @@ Zare, Nege, ena Lezelalem ❤️♾️👑💍🌹`,
         am: "Yene",
       },
     },
-    ,
     {
       date: "2026-07-01",
       topic: {
@@ -205,34 +204,125 @@ Happy 100 days, my love.💕💝💞💖🥰❤️💋`
       name: { en: "Yene", am: "Yene" },
     },
     {
-      date: "2026-11-08",
+      date: "2026-08-22",
       topic: {
-        en: "You Are Worth Every Beautiful Thought 🌷",
-        am: "ውብ ሐሳብ ሁሉ ይገባሻል 🌷",
+        en: "Special Love Message🌷",
+        am: "Special Love Message🌷",
       },
       description: {
-        en: "I hope you know that you deserve to be spoken to with gentleness, supported in the dreams that matter to you, and appreciated for the person you are—not only for what you do for others. When I think of you, I think of a heart that keeps trying, a spirit that carries quiet strength, and a presence that brings comfort without asking for attention. If you ever doubt your value, remember that your worth does not depend on a perfect day or on anyone's approval. I see so much beauty in your character and in the way you care. You deserve every sincere compliment, every thoughtful gesture, and every peaceful moment that reminds you how precious you are.",
-        am: "በርህራሄ እንዲነገርልሽ፣ ለአንቺ ጠቃሚ በሆኑ ሕልሞች እንድትደገፊና ለሆንሽው ሰው እንድትወደሺ ይገባሻል፤ ለሌሎች በምታደርጊው ብቻ አይደለም። ስላንቺ ሳስብ መሞከር የማትተውን ልብ፣ ጸጥ ያለ ጥንካሬን የተሸከመ መንፈስና ትኩረት ሳይጠይቅ ማጽናኛ የሚሰጥ መገኘትሽን አስባለሁ። ዋጋሽን ከተጠራጠርሽ ማንነትሽ በፍጹም ቀን ወይም በሌሎች ፈቃድ ላይ እንዳልተመሰረተ አስታውሺ። በባህሪሽና በእንክብካቤሽ ውስጥ ብዙ ውበት አያለሁ። እውነተኛ ምስጋናዎች፣ አሳቢ ድርጊቶችና ምን ያህል ውድ እንደሆንሽ የሚያስታውሱ ሰላማዊ ጊዜያት ሁሉ ይገቡሻል።",
+        en: "Yene bal yene Hulu neger edet edemafekrh ena edemamnh tawkaleh ....antega sawera betam Des ylegnal .....Yemren nw abat kasebkut belay befkrh teyzalew ....tchilaleh eshi ..bedenb nw yeyazkegn ....kelbe afekrhalew betam😍😍 kantega mawrat betam mwedew neger nw ....beka dmtshn kesemaw betam nw Des milegn ....hulem behu negere wst asbhew ....ahun ahun rasen eyeferahu metahu ....Yemren nw edet masredat edalebgn balawkm betam etamenkuh slemetahu rasen ferawalew ...gn beka bzu gize mlh neger ale esum ..betam afekrhalew nw .....kante wchi  bal ena fikir mnm neger alfelgm ..beka yemejemeriyaye edehonkew Hulu yemechereshaym neh .....gena ko altegabanm adel gn fkregnamich edehone alasbm ena leza nw bale yemalet dfretun yagegnehut  ...bzu gize sawerahm beka bale nw  ene ergtegna negn bale edemthon ena misth edemhon ....leza nw bezih seat enena ante and bet wst menor bnjemr aykebdenm mnlew huletachinm goal yaderegew neger ale ..manm lekeld or beka lmokrew blo yejemere yelem ena begna gngnunet wst agatami mibal neger yelem Hulum tasbobet ena tetselyobet nw yehonew ena wede huala mnasbbet mnm mkniat yelenm ......ena beka bale be edme zemene Hulu kante ga  misth hogne lnor fekadegna negn .....abreh lemenor mtguagualechewn ljochn lseth ...bebeth Selam desta fkir reft ljoch mtagegnbat misth lhon kewesenku koychalew ....kelbe afekrhalew .... kezih behuala abren Nen ..bzu destawech bzu alemedesetoch bzu chigrochn abren enasalfalen  enezihn negeroch degmo fikrachinn yataftutal enji lela mnm chigr aynorachewm egnaay ...mnm bifeter ategebh alew eshi abate ...hulem afekrhalew ......yantew afkaru hareg Mulugeta hailu ......",
+        am: "Yene bal yene Hulu neger edet edemafekrh ena edemamnh tawkaleh ....antega sawera betam Des ylegnal .....Yemren nw abat kasebkut belay befkrh teyzalew ....tchilaleh eshi ..bedenb nw yeyazkegn ....kelbe afekrhalew betam😍😍 kantega mawrat betam mwedew neger nw ....beka dmtshn kesemaw betam nw Des milegn ....hulem behu negere wst asbhew ....ahun ahun rasen eyeferahu metahu ....Yemren nw edet masredat edalebgn balawkm betam etamenkuh slemetahu rasen ferawalew ...gn beka bzu gize mlh neger ale esum ..betam afekrhalew nw .....kante wchi  bal ena fikir mnm neger alfelgm ..beka yemejemeriyaye edehonkew Hulu yemechereshaym neh .....gena ko altegabanm adel gn fkregnamich edehone alasbm ena leza nw bale yemalet dfretun yagegnehut  ...bzu gize sawerahm beka bale nw  ene ergtegna negn bale edemthon ena misth edemhon ....leza nw bezih seat enena ante and bet wst menor bnjemr aykebdenm mnlew huletachinm goal yaderegew neger ale ..manm lekeld or beka lmokrew blo yejemere yelem ena begna gngnunet wst agatami mibal neger yelem Hulum tasbobet ena tetselyobet nw yehonew ena wede huala mnasbbet mnm mkniat yelenm ......ena beka bale be edme zemene Hulu kante ga  misth hogne lnor fekadegna negn .....abreh lemenor mtguagualechewn ljochn lseth ...bebeth Selam desta fkir reft ljoch mtagegnbat misth lhon kewesenku koychalew ....kelbe afekrhalew .... kezih behuala abren Nen ..bzu destawech bzu alemedesetoch bzu chigrochn abren enasalfalen  enezihn negeroch degmo fikrachinn yataftutal enji lela mnm chigr aynorachewm egnaay ...mnm bifeter ategebh alew eshi abate ...hulem afekrhalew ......yantew afkaru hareg Mulugeta hailu ......",
       },
       name: { en: "Leyu", am: "Leyu" },
     },
     {
-      date: "2026-11-09",
-      topic: { en: "My Favorite Future 🌙", am: "የምወደው ወደፊት 🌙" },
+      date: "2026-08-22",
+      topic: { en: "Special Love Message 😍😘💕", am: "Special Love Message 💕😘😍" },
       description: {
-        en: "When I picture the future, I do not need it to be grand or perfectly planned. My favorite picture is made of small things we have not done yet: new places to discover, meals to share, stories to tell, and quiet evenings when we can simply be ourselves. I hope we keep making memories while also giving each other room to rest, grow, and follow our own hopes. The future feels less like a distant mystery when I imagine meeting it with honesty and care beside you. Whatever shape our days take, I want to keep noticing the good in them and thanking you for the part you play in my story.",
-        am: "ወደፊትን ሳስብ ታላቅ ወይም ፍጹም የታቀደ እንዲሆን አልፈልግም። የምወደው ምስል ገና ባላደረግናቸው ትንንሽ ነገሮች የተሞላ ነው፤ አዳዲስ ቦታዎችን ማወቅ፣ ምግብ መካፈል፣ ታሪኮችን መነጋገርና ራሳችን ሆነን የምንቆይባቸው ጸጥ ያሉ ምሽቶች። አብረን ትዝታዎችን እየፈጠርን እረፍት ለማድረግ፣ ለማደግና የራሳችንን ተስፋ ለመከተል ስፍራ እንድንሰጣጥ እመኛለሁ። ከአንቺ ጎን በሐቀኝነትና በእንክብካቤ እንደምንቀበለው ሳስብ ወደፊት ሩቅ ምስጢር አይመስለኝም። ቀኖቻችን ምንም ቢመስሉ፣ መልካሙን ማስተዋልና በታሪኬ ውስጥ ላለሽ ስፍራ ማመስገን እፈልጋለሁ።",
+        en: "Yen alam be anch fiker min endhon yefiker tergum yeyehubet ye kelet guday aydlm yemilehun yeyehubt set lijen mefker endzi nw ende beye yesbkubt...geta bemyewukehu anch becha nesh yen fiker hewoten mulu tekotetrsh ...anch be ene hiwote wusti seten bemyemelkt guday lemin ayhonim anch alesh be minm guday wusti anch alesh ....be fikersh tesrewelehu ...libe be sewu hiwote wusti betem wud new ...ke time bely ke birr bely lelam neger...betem wud neger ketebel lib nw anch libe wusti telkesh gebash tetotetersh yen ye libe sewu le anch betem wud bota lemaninm sewu lestehu melchlehu bota nw yesetehut ...bazi like nw anch be hiwote wusti wud...yen wud ..wud bota eheho setawush libe ye anch nw be libe wusti nuri degmo betem tenkeki endaligodabish ye anch menorya bota nw...yen wud laza nw anchin hiwotee milsh libe selehonsh nw yen libe...afkrshalehu hulem ke ena dekamish ...lela sewu lewodish yechelal teru negrshin , beretetishin ene gen mulu menintishin ke ena dikamish afkershalehu🤩🤩😍😍😍🥰🥰❤️❤️❤️🥰👸👸👸💍💍🔥🔥🔥🔥...ke anch liji mewuld anch megbt ke anch ger menor mewal andi ekf adrgo medr yen gugute nechehu konjo tdr yeteyegnal yen leyu...betem bizu neger wode hewotechi yemetel minm bemete yehon sewu ke anch ger ale...be desteshi gezi des yemelehu..be hazinesh gize ke anch gone mekon meybertshi sewu ale esum ene negn....yen mar yen tefci...ye anchin fiker kemskut betem yetefetel yen tafci ...mar kebeza yemeral aydl ababelu ye anch fiker be beza kutur le ene aymerm...yen tefci yen yemjmeryaye ye libe negist👸👸 yen wud hiwote yen leyu afkershalehu be hulum time ena huneta.... anchn ke sewu alwodadrm be wududur wusti atgbim bechegna sewu nesh.. ye libe sewu😍 esun edtwuki yehun...zare ahun lelit nw bazi seat akfesh atgebe edmegnish betem ergtegna negn ...be hiwote betem meminehu ena hergetegn yehonkubt guday ehe nw lemin edhona alkim ...kari ye hiwote chapter woyem tdr ke anch ger menor efelgelehu geta befkid ..ene ena anch liji mewuld ena mesdg nw mefelgehu...ke anch medrgehu neger des belogn nw medrgehu yen astewayi mist yen wud yen tefaci yen mar yen fiker😍😍😍😍 afkershalehu...min yehil edhon libe wust gebetsh betey noro des yelegn nebera gen beke kemilish belye nw mefkershi🥰🥰🥰🥰👸👸👸👸👸❤️❤️❤️❤️❤️😘😘😘😘😘",
+        am: "Yen alam be anch fiker min endhon yefiker tergum yeyehubet ye kelet guday aydlm yemilehun yeyehubt set lijen mefker endzi nw ende beye yesbkubt...geta bemyewukehu anch becha nesh yen fiker hewoten mulu tekotetrsh ...anch be ene hiwote wusti seten bemyemelkt guday lemin ayhonim anch alesh be minm guday wusti anch alesh ....be fikersh tesrewelehu ...libe be sewu hiwote wusti betem wud new ...ke time bely ke birr bely lelam neger...betem wud neger ketebel lib nw anch libe wusti telkesh gebash tetotetersh yen ye libe sewu le anch betem wud bota lemaninm sewu lestehu melchlehu bota nw yesetehut ...bazi like nw anch be hiwote wusti wud...yen wud ..wud bota eheho setawush libe ye anch nw be libe wusti nuri degmo betem tenkeki endaligodabish ye anch menorya bota nw...yen wud laza nw anchin hiwotee milsh libe selehonsh nw yen libe...afkrshalehu hulem ke ena dekamish ...lela sewu lewodish yechelal teru negrshin , beretetishin ene gen mulu menintishin ke ena dikamish afkershalehu🤩🤩😍😍😍🥰🥰❤️❤️❤️🥰👸👸👸💍💍🔥🔥🔥🔥...ke anch liji mewuld anch megbt ke anch ger menor mewal andi ekf adrgo medr yen gugute nechehu konjo tdr yeteyegnal yen leyu...betem bizu neger wode hewotechi yemetel minm bemete yehon sewu ke anch ger ale...be desteshi gezi des yemelehu..be hazinesh gize ke anch gone mekon meybertshi sewu ale esum ene negn....yen mar yen tefci...ye anchin fiker kemskut betem yetefetel yen tafci ...mar kebeza yemeral aydl ababelu ye anch fiker be beza kutur le ene aymerm...yen tefci yen yemjmeryaye ye libe negist👸👸 yen wud hiwote yen leyu afkershalehu be hulum time ena huneta.... anchn ke sewu alwodadrm be wududur wusti atgbim bechegna sewu nesh.. ye libe sewu😍 esun edtwuki yehun...zare ahun lelit nw bazi seat akfesh atgebe edmegnish betem ergtegna negn ...be hiwote betem meminehu ena hergetegn yehonkubt guday ehe nw lemin edhona alkim ...kari ye hiwote chapter woyem tdr ke anch ger menor efelgelehu geta befkid ..ene ena anch liji mewuld ena mesdg nw mefelgehu...ke anch medrgehu neger des belogn nw medrgehu yen astewayi mist yen wud yen tefaci yen mar yen fiker😍😍😍😍 afkershalehu...min yehil edhon libe wust gebetsh betey noro des yelegn nebera gen beke kemilish belye nw mefkershi🥰🥰🥰🥰👸👸👸👸👸❤️❤️❤️❤️❤️😘😘😘😘😘",
+      },
+      name: { en: "Yene", am: "Yene" },
+    },
+     {
+      date: "2026-09-01",
+      topic: {
+        en: "Happy Three Month Anniversary...❤️🥹🌹💖✨🤍🥰",
+        am: "Happy Three Month Anniversary...❤️🥹🌹💖✨🤍🥰",
+      },
+      description: {
+        en: "Yene bal enkuan geta redan betam Des blognal abate kantega ketegenagnen gize jemro betam destegna negn yene workye😘😘 bal ,yene shebela ,yene yewah ,yene jegna,yene tekochi bal betam betam afekrhalehu enkuanm tegenagnen ye sewn lb mewsedun tchilbetaleh eshi ..salhn swedew 😍😍 hulem saklgn yene chirash hasabh degmo betam ymechegnal arkeh mtasbew neger astewayneth beyesusm kasebkut belay asteway sew honeh agichehalew ena yhe menfes enega edigaba madreg alebh ...3 wer lay tekemche gn ye 80 bale nw mtmeslegn geta hoy 🫣🫣🫣 bcha bale afekrhalehu wedhalew😍😍😍😍😘😘😘😘😘😘😍😍 kantega Keri gizeyen  and bet wst menor felgalew ljochin mewled betam mnafkew neger nw...ante ye ljoch abat sthon mayet felgalew .. behiwote kalu sewech yemejemeriawa sew ante neh dkamen ena tnkareyen mtak betam tetegchew ye wsten waweraw smeten mgeltsket bchegnaw sew ante neh yene bal slemtadamtegn betam wedhalew 😍😍😍😘😘❤️❤️❤️ enkuan 3 werachinn lemakber egziabher redan .. kezih behualam weratochin sayhon ametatochin abren nw mnakebrew betdarachin wst ....by the way tdarn sasb malferaw balyew ante slehonk nw edewm ednafkew adrgehgnal  sewech mehalk eyaweran lbe wst yalehew ante neh yehone Bota heje masbew slante nw sra eyeseraw tz mtlegn ante neh .. bezih lk nw Yenen life yetekotterkew even tselotoche wstm aleh ...bcha stotaye neh eshi 😍😘😍🥰😍🥰🥰😍🥰🥰😘🥰😍hulem afekrhalew..kemasbew ena nw kalkut belay fikir yzognal le zih teteyakiw degmo ante neh .bcha gn kelbe afekrhalew Neff amet nurlgn",
+        am: "Yene bal enkuan geta redan betam Des blognal abate kantega ketegenagnen gize jemro betam destegna negn yene workye😘😘 bal ,yene shebela ,yene yewah ,yene jegna,yene tekochi bal betam betam afekrhalehu enkuanm tegenagnen ye sewn lb mewsedun tchilbetaleh eshi ..salhn swedew 😍😍 hulem saklgn yene chirash hasabh degmo betam ymechegnal arkeh mtasbew neger astewayneth beyesusm kasebkut belay asteway sew honeh agichehalew ena yhe menfes enega edigaba madreg alebh ...3 wer lay tekemche gn ye 80 bale nw mtmeslegn geta hoy 🫣🫣🫣 bcha bale afekrhalehu wedhalew😍😍😍😍😘😘😘😘😘😘😍😍 kantega Keri gizeyen  and bet wst menor felgalew ljochin mewled betam mnafkew neger nw...ante ye ljoch abat sthon mayet felgalew .. behiwote kalu sewech yemejemeriawa sew ante neh dkamen ena tnkareyen mtak betam tetegchew ye wsten waweraw smeten mgeltsket bchegnaw sew ante neh yene bal slemtadamtegn betam wedhalew 😍😍😍😘😘❤️❤️❤️ enkuan 3 werachinn lemakber egziabher redan .. kezih behualam weratochin sayhon ametatochin abren nw mnakebrew betdarachin wst ....by the way tdarn sasb malferaw balyew ante slehonk nw edewm ednafkew adrgehgnal  sewech mehalk eyaweran lbe wst yalehew ante neh yehone Bota heje masbew slante nw sra eyeseraw tz mtlegn ante neh .. bezih lk nw Yenen life yetekotterkew even tselotoche wstm aleh ...bcha stotaye neh eshi 😍😘😍🥰😍🥰🥰😍🥰🥰😘🥰😍hulem afekrhalew..kemasbew ena nw kalkut belay fikir yzognal le zih teteyakiw degmo ante neh .bcha gn kelbe afekrhalew Neff amet nurlgn",
       },
       name: { en: "Leyu", am: "Leyu" },
     },
     {
-      date: "2026-11-10",
-      topic: { en: "Today, Tomorrow, and Always ❤️", am: "ዛሬ፣ ነገና ሁልጊዜ ❤️" },
+      date: "2026-09-01",
+      topic: {
+        en: "Happy Three Month Anniversary...❤️🥹🌹💖✨🤍🥰",
+        am: "Happy Three Month Anniversary...❤️🥹🌹💖✨🤍🥰",
+      },
       description: {
-        en: "Today I want you to know that you are loved in the middle of real life—not only in special moments, but in the ordinary hours too. Tomorrow, I hope I can keep showing that love through patience, attention, and the small ways I choose to be present. And always, I want to remember that caring for one another is something we practice, not something we take for granted. Thank you for every conversation, every shared laugh, and every chance to understand you more deeply. My feelings are not a passing celebration; they are a steady gratitude for who you are and for the possibility of continuing this beautiful story together.",
-        am: "ዛሬ በእውነተኛ የሕይወት መካከል እንደምትወደጂ እንድታውቂ እፈልጋለሁ፤ በልዩ አፍታዎች ብቻ ሳይሆን በተራ ሰዓታትም ጭምር። ነገ ያንን ፍቅር በትዕግሥት፣ በትኩረትና በትንንሽ የመገኘት መንገዶች ማሳየቴን እንድቀጥል እመኛለሁ። ሁልጊዜም እርስ በርሳችንን መንከባከብ የምንለማመደው ነገር እንጂ ቀላል እንደሆነ የምንቆጥረው እንዳልሆነ ማስታወስ እፈልጋለሁ። ለእያንዳንዱ ውይይት፣ ለአብረን ሳቅንባቸው ጊዜያትና የበለጠ ለመረዳትሽ ለምትሰጪኝ እድል አመሰግናለሁ። ስሜቴ አልፎ የሚሄድ የደስታ በዓል አይደለም፤ ማንነትሽንና ይህን ውብ ታሪክ አብረን የመቀጠል እድልን በቋሚነት ማመስገን ነው።",
+        en: "yen fiker❤️❤️ enkuhan geta lazi ken aderesh🎁🎁🎁🎉🎉🎉 ehe ken  begugut yemintbekehu ken nw ..yen wub😊😊 ahun be akel andi lay hogn ye gera konjo time benselfi des yelegn nebera yen leyu🥰🥰🥰 ke anch ger sengenagn be agetm be mimesl mengd nebera yetgenagnenehu...miknetum huletachinm gib yegbanehu le temert nebera ...ahun kome beye sesib laka geta ehen asibo nw ene ehen hulu mengd  yewosedegn yen ye hiwote setota🎁❤️🥹🌹💖✨🤍🥰🎁 be anch betem destegna negn ke anch ger relashinship yejemrkubet ken machem leresa alchilm ...ye ene ena ye anch lidet ke nachin nw be gera yetwoldenbt dink ken nw so yen fiker🥰🥰🥰 hulem edetk mifelgehu neger anch melt hiwote edhonish mitregu neger hulu be ene lay value edale ...edeteki felgelehu yehon person aydleshim yen konjo😘❤️🥹🌹💖✨🤍🥰😘😘 ke anch lela mist, ke anch ke lela yen fiker, ke anch lela wud sewu ...be hiwote wusti yelem kazi bowelam ednor alfligm ...anch ye lijint fiker ...wodefit ye lijoch enate🤰🤰 nesh ....manim degmo ye anch bota be hiwote lenorehu aychlim konjit yen konjo🥰🥰 ...ke maninm ger alwodadrishm b/c akale nesh ....anch be hiwote wusti benorish be desta eynorku nw ...edlish betem teru nw minim selelefa tolo sera agegnahu,...mikenetu degmo hulem be tselotuwa mitsbegn geta yeberket libam konjo mist selalechign ...hulem be gone selelishgn hulem ewodishalehu..afkershalehu😘😘🥰❤️🥹🌹💖✨🤍🥰🥰🥰🥰....lela neger misb eskamalichl ders hulem anchin nw mesbehu yen fiker❤️❤️🥹🌹💖✨🤍🥰❤️❤️....wuddd 😘😘😘❤️❤️🥹🌹💖✨🤍🥰❤️🥰🥰nw mergish ...ke anch ger menor ...ede anch konjo lejochin ke anch mewuled betem be gugut metbekehu neger nw ...anch yen becha nesh enem ye anch becha ...be mehalachin maninm aygebam minm befeter huletachinm be mewurt enfetelen ...yen alam, yen fiker, yen konjo, yen leyu,ye lijoch enate yenem libam mist...hulem ke libe ke nabse afkershalehu❤️🥹🌹💖✨🤍🥰🥰🥰🥰🥰",
+        am: "yen fiker❤️❤️ enkuhan geta lazi ken aderesh🎁🎁🎁🎉🎉🎉 ehe ken  begugut yemintbekehu ken nw ..yen wub😊😊 ahun be akel andi lay hogn ye gera konjo time benselfi des yelegn nebera yen leyu🥰🥰🥰 ke anch ger sengenagn be agetm be mimesl mengd nebera yetgenagnenehu...miknetum huletachinm gib yegbanehu le temert nebera ...ahun kome beye sesib laka geta ehen asibo nw ene ehen hulu mengd  yewosedegn yen ye hiwote setota🎁❤️🥹🌹💖✨🤍🥰🎁 be anch betem destegna negn ke anch ger relashinship yejemrkubet ken machem leresa alchilm ...ye ene ena ye anch lidet ke nachin nw be gera yetwoldenbt dink ken nw so yen fiker🥰🥰🥰 hulem edetk mifelgehu neger anch melt hiwote edhonish mitregu neger hulu be ene lay value edale ...edeteki felgelehu yehon person aydleshim yen konjo😘❤️🥹🌹💖✨🤍🥰😘😘 ke anch lela mist, ke anch ke lela yen fiker, ke anch lela wud sewu ...be hiwote wusti yelem kazi bowelam ednor alfligm ...anch ye lijint fiker ...wodefit ye lijoch enate🤰🤰 nesh ....manim degmo ye anch bota be hiwote lenorehu aychlim konjit yen konjo🥰🥰 ...ke maninm ger alwodadrishm b/c akale nesh ....anch be hiwote wusti benorish be desta eynorku nw ...edlish betem teru nw minim selelefa tolo sera agegnahu,...mikenetu degmo hulem be tselotuwa mitsbegn geta yeberket libam konjo mist selalechign ...hulem be gone selelishgn hulem ewodishalehu..afkershalehu😘😘🥰❤️🥹🌹💖✨🤍🥰🥰🥰🥰....lela neger misb eskamalichl ders hulem anchin nw mesbehu yen fiker❤️❤️🥹🌹💖✨🤍🥰❤️❤️....wuddd 😘😘😘❤️❤️🥹🌹💖✨🤍🥰❤️🥰🥰nw mergish ...ke anch ger menor ...ede anch konjo lejochin ke anch mewuled betem be gugut metbekehu neger nw ...anch yen becha nesh enem ye anch becha ...be mehalachin maninm aygebam minm befeter huletachinm be mewurt enfetelen ...yen alam, yen fiker, yen konjo, yen leyu,ye lijoch enate yenem libam mist...hulem ke libe ke nabse afkershalehu❤️🥹🌹💖✨🤍🥰🥰🥰🥰🥰",
+      },
+      name: { en: "Yene", am: "Yene" },
+    },
+     {
+      date: "2026-09-25",
+      topic: {
+        en: "Special Love Message🌷",
+        am: "Special Love Message🌷",
+      },
+      description: {
+        en: `Abat smagnma ....hulem fikirem meglets ena metshaf kechalkut belay afekrhalew ....eneja alawkm lbe betam nw yameneh ....wend lji aytamenm balkubet andebete ..amgnehalew asbelhgnal ...ye ewnet amgnehalew afkrehalew kezih behuala behiwote latah alfelgm ante yene bcha neh ene yante bcha negn ...enem lbem hasabem sewnetem lante talfo tesetual yante bcha nw ....Yemren nw Kal yelegnm gn beka kelbe afekrhalew hulgizem tnafkegnaleh andade gize bante ekf wst mekoyet yamregnal ....gibi eyalen Selam stlegn mtakfegn neger ynafkegnal ....anten menkat bcha mayet bcha mnafkbet gize bzu nw ....bzu neger astemrehgnal ...bzu melkam negeroch kante temrialew ...Hulu negerhn wedewalew hasabhn lbhn akuamhn beka eyandadu negerhn wedewalew ...netsanete neh yetesemagnn mangnawnm neger be gltse maweraw antega nw ... egziabher bzu salefa bzu relationship wst salmokr gena bemejemerw tkklegnawn sew setognal betam edlegna sew negn ....edante aynet bal slalat hareg hulem edlegna nech ...yetum negere saybelash yante nw ....bale hulem afekrhalew.....ke fikir ketlo yalew meseber yasferagn nbr ..ahun gn tkklegnaw sew ga tetelfe be fikir yalehn mesrat ena ye bahri lewt aychebetalew ....yene yemejemeria bal yeljiche abat yebete ras kenebse afekrhalew ....lela kalt binorugn ena bedenb mawrat bchil Des ylegn nbr .... relationship tdar milewn sasb destegna yehonkut mngbabaw ante ga slehone nw ......ante edematgidagn awkalew ..betam edemtasblgn ena Lene yalehn ye fikir lb awkalew leza nw be fikirhn destegna mihonew ....afekrhalew ❤️❤️❤️❤️❤️❤️❤️
+Afekrhalew 😍😍
+Afekrhalew 😍😘😍😘
+Amgnehalew 😍😘😍
+Amgnehalew🤝🤝🤝🤝
+Amgnehalew 🤝🤝🤝
+Ewodhalew 🫶🫶
+ewodhalew 🫶🫶🫶🫶
+Ewodhalew 🫶🫶🫶🫶
+Bale neh eshi 🤵‍♂🤵‍♂🤵‍♂🤵‍♂
+Misth negn 👰‍♀👰‍♀👰‍♀
+Yalenn fikir sasb betam ergtegna negn edemngaba .....ye ena yante relationship menged lay aykerm eshi gabcha lay ydersal fren yaferal .......eshi beka ena hunlgn wdye`,
+        am: `Abat smagnma ....hulem fikirem meglets ena metshaf kechalkut belay afekrhalew ....eneja alawkm lbe betam nw yameneh ....wend lji aytamenm balkubet andebete ..amgnehalew asbelhgnal ...ye ewnet amgnehalew afkrehalew kezih behuala behiwote latah alfelgm ante yene bcha neh ene yante bcha negn ...enem lbem hasabem sewnetem lante talfo tesetual yante bcha nw ....Yemren nw Kal yelegnm gn beka kelbe afekrhalew hulgizem tnafkegnaleh andade gize bante ekf wst mekoyet yamregnal ....gibi eyalen Selam stlegn mtakfegn neger ynafkegnal ....anten menkat bcha mayet bcha mnafkbet gize bzu nw ....bzu neger astemrehgnal ...bzu melkam negeroch kante temrialew ...Hulu negerhn wedewalew hasabhn lbhn akuamhn beka eyandadu negerhn wedewalew ...netsanete neh yetesemagnn mangnawnm neger be gltse maweraw antega nw ... egziabher bzu salefa bzu relationship wst salmokr gena bemejemerw tkklegnawn sew setognal betam edlegna sew negn ....edante aynet bal slalat hareg hulem edlegna nech ...yetum negere saybelash yante nw ....bale hulem afekrhalew.....ke fikir ketlo yalew meseber yasferagn nbr ..ahun gn tkklegnaw sew ga tetelfe be fikir yalehn mesrat ena ye bahri lewt aychebetalew ....yene yemejemeria bal yeljiche abat yebete ras kenebse afekrhalew ....lela kalt binorugn ena bedenb mawrat bchil Des ylegn nbr .... relationship tdar milewn sasb destegna yehonkut mngbabaw ante ga slehone nw ......ante edematgidagn awkalew ..betam edemtasblgn ena Lene yalehn ye fikir lb awkalew leza nw be fikirhn destegna mihonew ....afekrhalew ❤️❤️❤️❤️❤️❤️❤️
+Afekrhalew 😍😍
+Afekrhalew 😍😘😍😘
+Amgnehalew 😍😘😍
+Amgnehalew🤝🤝🤝🤝
+Amgnehalew 🤝🤝🤝
+Ewodhalew 🫶🫶
+ewodhalew 🫶🫶🫶🫶
+Ewodhalew 🫶🫶🫶🫶
+Bale neh eshi 🤵‍♂🤵‍♂🤵‍♂🤵‍♂
+Misth negn 👰‍♀👰‍♀👰‍♀
+Yalenn fikir sasb betam ergtegna negn edemngaba .....ye ena yante relationship menged lay aykerm eshi gabcha lay ydersal fren yaferal .......eshi beka ena hunlgn wdye`,
       },
       name: { en: "Leyu", am: "Leyu" },
+    },
+    {
+      date: "2026-09-25",
+      topic: {
+        en: "Special Love Message🌷",
+        am: "Special Love Message🌷",
+      },
+      description: {
+        en: `Be geta zare degmo min aynet hasb nw yeworashihu...lela aynet semt tesemegn betem des alegn yen wud ...negeroch be 3 yetsenalu edmil sost sost gize degagemishihu...enem ke milish bely ...kemaworash bely afkershalehu...yen ababa anch sisb beke betem des yelgnal anchin sisb tdr yeteygnal anch sesib andi adar aydlm metyegn...bizu relationship le andi adr nw ...andi ken sex kergu bowela ...beke yeflkutin neger agegnahu tebeblo breakup yergelu...ene gen andim ken anchin le goda asib alwukim...geta bemywukehu libshin lemsebr .. beke yehon ken ke kebdegn break argelehu beye asbi alwukim...challenge yenoral ahu esun be gonish hogn ke anch ger tdr memsrt nw ekidee ...andi neger degmo lengirsh libshin betem etbkelehu eshi be ene miknet edtazin alflgem...be desta miknet enji be ene azenesh enbashi edwota machim alflgim...aydlm be ene be lela sewu enkuhan edtazin alflgim esu degmo be tinkeke etbkelehu...yen hulu neger ye anch nw ..ke manim ger equal bota aydlm yelesh ..ye anch bota kemanim ger aywodadrim anch anch nesh ye anch bota ye anch becha nw yen libe sewu...betem afkershalehu...yen libam set, ye setent lik nesh laza nw hulun negern le anch yesetahut...yen fiker hulem tenafkegnalesh andi sewu mani nafki ketbel anchi...ekif mergi hule yamergnal..ekif argi rithim seat mekoyet...gen sengenagn erfi eskity ders ekif edmadergi lenegrish felgelehu...kaza degmo denbershim edemisem ...yen tafaci hulem betem des selgnim afkershalehu degmo sekefegn ena sedkimim hulu afkershalehu...enkuhanim ke anch ger relationship jemerku enkuhanim miste honesh...be esu wusen hulem destegna negn yen stota...
+balesh negn 
+Balish negn
+Balish negn...
+Miste nesh💍💍💍
+Miste mesh💍💍💍
+Miste nesh💍💍💍...neger be sost yetsenal edmibelehu...
+lib ye anch nw ❤️❤️💖💞
+lib ye anch nw❤️❤️😘💞😘
+lib ye anch nw💖💖❤️😘
+Afkershalehu🥰❤️😘💖💞
+Afkershalehu🥰❤️😘💖💞
+Afkershalehu🥰❤️😘💖💞
+Amnishalehu☺️
+Amnishalehu☺️
+Amnishalehu☺️ ...beke milsh bely...yen abab hulem tetkikgn be anch yetsebera lib machem aytgenim ...enem etnkeklehu💋💋👸💞💖💕💝❤️💍yen leyu, fiker,wud,nibse,lib, enat,libam, ewodishalehu ke libem afkershalehu❤️💝💝💖💞💞💝💞💖❤️💞💝🥰😘🥰😘🥰`,
+        am: `Be geta zare degmo min aynet hasb nw yeworashihu...lela aynet semt tesemegn betem des alegn yen wud ...negeroch be 3 yetsenalu edmil sost sost gize degagemishihu...enem ke milish bely ...kemaworash bely afkershalehu...yen ababa anch sisb beke betem des yelgnal anchin sisb tdr yeteygnal anch sesib andi adar aydlm metyegn...bizu relationship le andi adr nw ...andi ken sex kergu bowela ...beke yeflkutin neger agegnahu tebeblo breakup yergelu...ene gen andim ken anchin le goda asib alwukim...geta bemywukehu libshin lemsebr .. beke yehon ken ke kebdegn break argelehu beye asbi alwukim...challenge yenoral ahu esun be gonish hogn ke anch ger tdr memsrt nw ekidee ...andi neger degmo lengirsh libshin betem etbkelehu eshi be ene miknet edtazin alflgem...be desta miknet enji be ene azenesh enbashi edwota machim alflgim...aydlm be ene be lela sewu enkuhan edtazin alflgim esu degmo be tinkeke etbkelehu...yen hulu neger ye anch nw ..ke manim ger equal bota aydlm yelesh ..ye anch bota kemanim ger aywodadrim anch anch nesh ye anch bota ye anch becha nw yen libe sewu...betem afkershalehu...yen libam set, ye setent lik nesh laza nw hulun negern le anch yesetahut...yen fiker hulem tenafkegnalesh andi sewu mani nafki ketbel anchi...ekif mergi hule yamergnal..ekif argi rithim seat mekoyet...gen sengenagn erfi eskity ders ekif edmadergi lenegrish felgelehu...kaza degmo denbershim edemisem ...yen tafaci hulem betem des selgnim afkershalehu degmo sekefegn ena sedkimim hulu afkershalehu...enkuhanim ke anch ger relationship jemerku enkuhanim miste honesh...be esu wusen hulem destegna negn yen stota...
+balesh negn 
+Balish negn
+Balish negn...
+Miste nesh💍💍💍
+Miste mesh💍💍💍
+Miste nesh💍💍💍...neger be sost yetsenal edmibelehu...
+lib ye anch nw ❤️❤️💖💞
+lib ye anch nw❤️❤️😘💞😘
+lib ye anch nw💖💖❤️😘
+Afkershalehu🥰❤️😘💖💞
+Afkershalehu🥰❤️😘💖💞
+Afkershalehu🥰❤️😘💖💞
+Amnishalehu☺️
+Amnishalehu☺️
+Amnishalehu☺️ ...beke milsh bely...yen abab hulem tetkikgn be anch yetsebera lib machem aytgenim ...enem etnkeklehu💋💋👸💞💖💕💝❤️💍yen leyu, fiker,wud,nibse,lib, enat,libam, ewodishalehu ke libem afkershalehu❤️💝💝💖💞💞💝💞💖❤️💞💝🥰😘🥰😘🥰`,
+      },
+      name: { en: "Yene", am: "Yene" },
     },
   ],
 
@@ -322,6 +412,81 @@ Happy 100 days, my love.💕💝💞💖🥰❤️💋`
 
     {
       src: "assets/photos/photo15.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo16.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo17.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo18.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo19.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo20.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo21.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo22.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo23.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo24.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo25.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo26.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo27.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo28.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo29.jpg",
+      caption:
+        "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
+    },
+     {
+      src: "assets/photos/photo30.jpg",
       caption:
         "Just me, hoping to be someone worthy of the beautiful love you deserve. ❤️🥰✨",
     },
@@ -678,6 +843,8 @@ const translations = {
     footerNavLabel: "Footer navigation",
     backToTopLabel: "Back to top",
     journalGridLabel: "Daily love messages",
+    journalViewDetails: "View Details ❤️",
+    journalHideDetails: "Hide Details",
     journalEmpty: "Add your first message in loveConfig.dailyMessages.",
     journalNotSet: "Not provided",
     journalDateMissing: "Date not set",
@@ -753,6 +920,8 @@ const translations = {
     footerNavLabel: "የግርጌ አሰሳ",
     backToTopLabel: "ወደ ላይ ተመለስ",
     journalGridLabel: "የዕለት የፍቅር መልዕክቶች",
+    journalViewDetails: "ዝርዝሩን ይመልከቱ ❤️",
+    journalHideDetails: "ዝርዝሩን ደብቅ",
     journalEmpty: "የመጀመሪያ መልዕክትዎን loveConfig.dailyMessages ውስጥ ያክሉ።",
     journalNotSet: "አልተሰጠም",
     journalDateMissing: "ቀን አልተዘጋጀም",
@@ -1047,7 +1216,7 @@ function updateDynamicContent(lang) {
 
   // Update final message
   const finalTitle = document.querySelector(".surprise__final");
-  if (finalTitle && !document.getElementById("surpriseReveal").hidden) {
+  if (finalTitle) {
     finalTitle.innerHTML =
       (loveConfig.finalMessage[lang] || loveConfig.finalMessage.en) +
       ' <span class="heart-glyph">❤</span>';
@@ -1102,6 +1271,58 @@ function getLocalDateKey(date) {
 function journalText(value, lang, fallback) {
   const text = typeof value === "string" ? value : value?.[lang] || value?.en;
   return typeof text === "string" && text.trim() ? text.trim() : fallback;
+}
+
+const expandedJournalEntries = new Set();
+
+function setJournalExpanded(card, body, toggle, expanded, labels, animate) {
+  const label = toggle.querySelector(".daily-journal__toggle-label");
+  const duration = parseFloat(getComputedStyle(body).transitionDuration) || 0;
+  const instant = !animate || motionReduced || duration === 0;
+  let finished = false;
+
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    body.removeEventListener("transitionend", onEnd);
+    if (expanded) {
+      body.style.maxHeight = "none";
+    } else {
+      body.style.maxHeight = "";
+      const top = card.getBoundingClientRect().top;
+      if (animate && top < 0) {
+        card.scrollIntoView({
+          block: "start",
+          behavior: motionReduced ? "auto" : "smooth",
+        });
+      }
+    }
+  };
+  const onEnd = (e) => {
+    if (e.target === body && e.propertyName === "max-height") finish();
+  };
+
+  card.classList.toggle("is-expanded", expanded);
+  toggle.setAttribute("aria-expanded", String(expanded));
+  label.textContent = expanded
+    ? labels.journalHideDetails
+    : labels.journalViewDetails;
+
+  if (instant) {
+    finished = false;
+    body.style.maxHeight = expanded ? "none" : "";
+    return;
+  }
+
+  if (expanded) {
+    body.style.maxHeight = `${body.scrollHeight}px`;
+  } else {
+    body.style.maxHeight = `${body.scrollHeight}px`;
+    void body.offsetHeight;
+    body.style.maxHeight = "";
+  }
+  body.addEventListener("transitionend", onEnd);
+  window.setTimeout(finish, duration * 1000 + 150);
 }
 
 function renderDailyJournal(lang) {
@@ -1179,7 +1400,39 @@ function renderDailyJournal(lang) {
       lang,
       labels.journalNotSet,
     );
-    card.appendChild(description);
+
+    const body = document.createElement("div");
+    body.className = "daily-journal__body";
+    body.id = `dailyJournalBody${entry.originalIndex}`;
+    body.appendChild(description);
+    card.appendChild(body);
+
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "daily-journal__toggle";
+    toggle.setAttribute("aria-controls", body.id);
+    const toggleLabel = document.createElement("span");
+    toggleLabel.className = "daily-journal__toggle-label";
+    toggle.appendChild(toggleLabel);
+    card.appendChild(toggle);
+
+    const startOpen = expandedJournalEntries.has(entry.originalIndex);
+    setJournalExpanded(card, body, toggle, startOpen, labels, false);
+
+    toggle.addEventListener("click", () => {
+      const open = !card.classList.contains("is-expanded");
+      if (open) expandedJournalEntries.add(entry.originalIndex);
+      else expandedJournalEntries.delete(entry.originalIndex);
+      setJournalExpanded(
+        card,
+        body,
+        toggle,
+        open,
+        translations[currentLang] || translations.en,
+        true,
+      );
+    });
+
     grid.appendChild(card);
   });
 
@@ -1366,6 +1619,19 @@ function setupNav() {
   const nav = document.getElementById("siteNav");
   const links = document.getElementById("navLinks");
   if (!links) return;
+
+  document.querySelectorAll("a[data-nav]").forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
+      const target = document.querySelector(anchor.getAttribute("href"));
+      if (target && target.getClientRects().length === 0) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: motionReduced ? "auto" : "smooth",
+        });
+      }
+    });
+  });
 
   const anchors = [...links.querySelectorAll("a[data-nav]")];
   const sections = anchors
@@ -1931,7 +2197,7 @@ function setupHeartTap(reduced) {
   const msgEl = document.getElementById("heartMsg");
   let count = 0;
 
-  const milestones = [
+  const getMilestones = () => [
     [1, currentLang === "am" ? "❤️ ልቤ የአንቺ ነው።" : "❤️ My heart chooses you."],
     [
       5,
@@ -1979,7 +2245,7 @@ function setupHeartTap(reduced) {
       }
     }
 
-    const match = [...milestones].reverse().find(([n]) => count >= n);
+    const match = getMilestones().reverse().find(([n]) => count >= n);
     if (match) msgEl.textContent = match[1];
   });
 }

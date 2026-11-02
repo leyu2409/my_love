@@ -54,6 +54,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -253,12 +257,12 @@ button {
   z-index: 1000;
   gap: clamp(10px, 1.5vw, 24px);
   transition: background 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
-  animation: navDropIn 0.45s var(--ease) both;
+  animation: navDropIn 0.45s var(--ease) backwards;
 }
 
 @keyframes navDropIn {
   from { opacity: 0; translate: 0 -8px; }
-  to { opacity: 1; translate: 0 0; }
+  to { opacity: 1; translate: none; }
 }
 
 .nav.is-scrolled {
@@ -304,7 +308,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
+  height: 31px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -318,6 +322,7 @@ button {
 
 .nav__toggle span {
   display: block;
+  flex-shrink: 0;
   width: 100%;
   height: 4px;
   background-color: var(--cream);
@@ -2495,7 +2500,7 @@ body.menu-open .nav__toggle span:nth-child(3) {
 .daily-journal__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
+  align-items: start;
   gap: clamp(18px, 2.4vw, 28px);
 }
 
@@ -2506,6 +2511,7 @@ body.menu-open .nav__toggle span:nth-child(3) {
 }
 
 .daily-journal__card {
+  --journal-font-size: clamp(1rem, 1.25vw, 1.08rem);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2595,10 +2601,84 @@ body.menu-open .nav__toggle span:nth-child(3) {
   margin: 0;
   color: var(--pink);
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.25vw, 1.08rem);
+  font-size: var(--journal-font-size);
   line-height: 1.8;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+/* ===== View Details / Hide Details ===== */
+@property --journal-fade {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 48px;
+}
+
+.daily-journal__body {
+  --journal-fade: 48px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0;
+  max-height: calc(var(--journal-font-size) * 1.8 * 3);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--journal-fade)), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - var(--journal-fade)), transparent);
+  transition: max-height 0.55s var(--ease), --journal-fade 0.45s var(--ease);
+}
+
+.daily-journal__card.is-expanded .daily-journal__body {
+  --journal-fade: 0px;
+}
+
+.daily-journal__toggle {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 10px 22px;
+  border: 1.5px solid rgba(224, 86, 143, 0.55);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(194, 24, 91, 0.26) 0%, rgba(142, 26, 74, 0.26) 100%);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.daily-journal__toggle::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.35s var(--ease), margin 0.35s var(--ease);
+}
+
+.daily-journal__card.is-expanded .daily-journal__toggle::after {
+  margin-top: 3px;
+  transform: rotate(225deg);
+}
+
+.daily-journal__toggle:hover {
+  border-color: var(--rose-light);
+  background: linear-gradient(135deg, var(--rose) 0%, #8e1a4a 100%);
+  box-shadow: 0 10px 26px -8px rgba(194, 24, 91, 0.5);
+  transform: translateY(-2px);
+}
+
+.daily-journal__toggle:active {
+  transform: scale(0.97);
 }
 
 @keyframes memoryHeartDrift {
@@ -2614,10 +2694,14 @@ body.menu-open .nav__toggle span:nth-child(3) {
   .final-memories { padding: 28px 16px; }
   .daily-journal__grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .daily-journal__card { padding: 20px; }
+  .daily-journal__toggle { align-self: stretch; width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .final-memories::before,
   .final-memories::after { animation: none !important; }
   .daily-journal__card { transition: none !important; transform: none !important; }
+  .daily-journal__body,
+  .daily-journal__toggle,
+  .daily-journal__toggle::after { transition: none !important; }
 }
