@@ -325,7 +325,7 @@ Amnishalehu☺️ ...beke milsh bely...yen abab hulem tetkikgn be anch yetsebera
       name: { en: "Yene", am: "Yene" },
     },
     {
-      date: "2026-11-01",
+      date: "2026-11-03",
       topic: {
         en: "🎉💍🥰 Happy 5th Month Anniversary, yen alam!🌎🌍 ❤️👑😘🌹🦋✨💕♾️👸💖🎂🥂💑🔐😍💞",
         am: "🎉💍🥰 Happy 5th Month Anniversary, yen alam!🌎🌍 ❤️👑😘🌹🦋✨💕♾️👸💖🎂🥂💑🔐😍💞",
