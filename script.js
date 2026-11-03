@@ -324,6 +324,69 @@ Amnishalehu☺️ ...beke milsh bely...yen abab hulem tetkikgn be anch yetsebera
       },
       name: { en: "Yene", am: "Yene" },
     },
+    {
+      date: "2026-11-01",
+      topic: {
+        en: "🎉💍🥰 Happy 5th Month Anniversary, yen alam!🌎🌍 ❤️👑😘🌹🦋✨💕♾️👸💖🎂🥂💑🔐😍💞",
+        am: "🎉💍🥰 Happy 5th Month Anniversary, yen alam!🌎🌍 ❤️👑😘🌹🦋✨💕♾️👸💖🎂🥂💑🔐😍💞",
+      },
+      description: {
+        en: `Yen alam zare 5 wor molan be geta edet des eyalegn edel ...❤️🥹💍💕 kelel neger aydlm geta bertat honlenal agzonal..🙏❤️ mehratu be hibratachin bezetowel ....🫂💞 abronatu ke egna ger nebera ...🥰👩‍❤️‍👨 chrinatu beza yen fiker beke geta yimasgin ede esu yele abat 👨 , wodaji ena temegn yelem...❤️🙏 ke anch ger yekoyenbt hulunim moment betem nw mewodehu betem konjo time  nebera..😍🌹 sengbaba be chkichik wusti , be kerekr wusti yeslfnehu ken hulu le ene tilk temrt ena tesfa eyesetegn nebera ...🥹💗 yen konjo ene fiker edzi yergel beye asibe alkem nebera edzi afkeralehu beye altbekum nebera...💘💍 mulu tekurate be anch lay nebera... beke yehon ke wuste yehon mafkeri ...❤️ libe be anch fiker temolto nebera esu becha aydlm lela sewu mesb aydlm  le anch enkuhan yelegn 24 seat eynesegn nebera...🥰💞 100 percent miste ede honesh wust amenowel ...💯❤️ ke ger anch 5 wor koyeta behonim next yekergn ye mider koyeta ke anch ger becha edhon amegnwelehu...♾️💍 ke geta yetsetishign yen worke yen tafaci ena ye akal edhonesh lengrsh felgelehu...👑🌹 machem behon yen wudu negere edehonesh hulem asib ...beke  anch akale , miste, ye lijoche enat, ke anch wuci feker bekegn ...🥹❤️ ande anch yemseleche libam set geta setognal...💞 tselote mals nesh...🙏 semignat woyem miste bethon beye yesbkuti set nesh...🥰 ke ena dikamish afkershalehu ...❤️ libe ye anch ena ye anch nw manim be anch bota aykemtim wudu bota ye anch nw....💍💕 fikern edi nw beye meglets alchlim kelet aybekugnim yen wud zim belesh terjign ...😘 ede adis yeyazegn fiker edi beye aywotalegnim gen beke ...💗 yen mist hulum neger yelfina miste honesh sofa lay derte lay tegnitesh sela wulo..🫂❤️ sela liji ...👶 sela bet nuro ...ke kirbu edminawora ena andi bet wusti edmninor be geta betem amenalehu...🙏🏡 be hiwote yemjmerya set nesh ...👸💖 fiker yezogn fikern edzi beye yegltsekut anch nesh ...❤️ kazi bowelam maninm edzi melt alflgim...ye anch becha yehona neger be ene life wusti bezu nechehu like ke kelete jemero...🥹💞 enate, yen wud, yen fiker , yen alam, yen akale, leyu...👸❤️ yemseselu simoch ye anch becha nechehu...💍 hulem liben etbkeshalehu hulem hasbn etbkeshalehu...🥰 yetestkekle bet ednorn etselyalehu degmo etgelehu..🙏 geta betachinin yeserelenal ...🏡❤️ egn degmo yan bet lemwusad enbertalen ....🥹💑 kaza wuci degmo minm lela hasb mesb maychil be libu anchin becha eyesbe yeminor andi misken sewu edalesh hulem asib...🥺❤️ be fikersh sewun meyzi chlishibet... ke anch ger yelegn relationship ehunetegn edhon yegbegn mulu negershin selmwud nw ...💞 sewu edet dekamunim chmir yefkeral ene ge yelehu fiker edzi nw ke ene dikamish edmfker nw...❤️ kazi bowel 5 wor becha seyhon ...5 years 50 years ..👩‍❤️‍👨💍 liji ye liji liji hulu eska shmgelen bezu hazen ena desta enselflen ...👶🥹❤️ geta anchin yemselech libam ena wud set setognal..👑💕 be tenkeke eyzishalehu...🥰 anch yen becha nesh ...❤️ ke ene wuci le lela sewu athognim ...enem ye anch becha negn ke anch wuci le lela set bal mehon alflgim...💍 yemjmrsh ena yemcherashash negn ...💞 lik belelahu fiker....
+❤️ afkershalehu ❤️
+💗 afkershalehu 💗
+💘 afkershalehu 💘
+🥰 afkershalehu 🥰
+😘 afkershalehu 😘
+❤️ afkershalehu ❤️
+💍 afkershalehu 💍
+👑 Hulem ye anch hasb hasbe nw ...destesh destye nw ...hazenshim degmo haznen nw...🥹💞
+💖 yen wud
+👑 yen mist
+🌍 Yen alam
+❤️ Yen akal
+💑 Yen gudegna
+💍 Yen leyu
+🌹 Yen konjo
+👸 Yen enat
+🥰 Yen tensh
+💕 Yen asibi
+💎 Yen mekeri
+😘 Yen nafkot
+🌷 Yen work
+🦋 Yen ehet
+❤️ Yen hulu negere...hulu neger nesh minm hasb metyek behonim ke anch bowela nw le lela sewu medrsehu...🥹💞 💍anch be hulum huneta wusti yemjmryaye nesh ....♾️🥰 ker zemenen eyafkerkush lenor kel egbelshalehu...❤️💍 yen melkem set...👑💍👸
+Wuddddd...😘❤️💋😘🥰🥰
+Fikerrrrr nw mergish...🥰💞♾️`,
+
+        am: `Yen alam zare 5 wor molan be geta edet des eyalegn edel ...❤️🥹💍💕 kelel neger aydlm geta bertat honlenal agzonal..🙏❤️ mehratu be hibratachin bezetowel ....🫂💞 abronatu ke egna ger nebera ...🥰👩‍❤️‍👨 chrinatu beza yen fiker beke geta yimasgin ede esu yele abat 👨 , wodaji ena temegn yelem...❤️🙏 ke anch ger yekoyenbt hulunim moment betem nw mewodehu betem konjo time  nebera..😍🌹 sengbaba be chkichik wusti , be kerekr wusti yeslfnehu ken hulu le ene tilk temrt ena tesfa eyesetegn nebera ...🥹💗 yen konjo ene fiker edzi yergel beye asibe alkem nebera edzi afkeralehu beye altbekum nebera...💘💍 mulu tekurate be anch lay nebera... beke yehon ke wuste yehon mafkeri ...❤️ libe be anch fiker temolto nebera esu becha aydlm lela sewu mesb aydlm  le anch enkuhan yelegn 24 seat eynesegn nebera...🥰💞 100 percent miste ede honesh wust amenowel ...💯❤️ ke ger anch 5 wor koyeta behonim next yekergn ye mider koyeta ke anch ger becha edhon amegnwelehu...♾️💍 ke geta yetsetishign yen worke yen tafaci ena ye akal edhonesh lengrsh felgelehu...👑🌹 machem behon yen wudu negere edehonesh hulem asib ...beke  anch akale , miste, ye lijoche enat, ke anch wuci feker bekegn ...🥹❤️ ande anch yemseleche libam set geta setognal...💞 tselote mals nesh...🙏 semignat woyem miste bethon beye yesbkuti set nesh...🥰 ke ena dikamish afkershalehu ...❤️ libe ye anch ena ye anch nw manim be anch bota aykemtim wudu bota ye anch nw....💍💕 fikern edi nw beye meglets alchlim kelet aybekugnim yen wud zim belesh terjign ...😘 ede adis yeyazegn fiker edi beye aywotalegnim gen beke ...💗 yen mist hulum neger yelfina miste honesh sofa lay derte lay tegnitesh sela wulo..🫂❤️ sela liji ...👶 sela bet nuro ...ke kirbu edminawora ena andi bet wusti edmninor be geta betem amenalehu...🙏🏡 be hiwote yemjmerya set nesh ...👸💖 fiker yezogn fikern edzi beye yegltsekut anch nesh ...❤️ kazi bowelam maninm edzi melt alflgim...ye anch becha yehona neger be ene life wusti bezu nechehu like ke kelete jemero...🥹💞 enate, yen wud, yen fiker , yen alam, yen akale, leyu...👸❤️ yemseselu simoch ye anch becha nechehu...💍 hulem liben etbkeshalehu hulem hasbn etbkeshalehu...🥰 yetestkekle bet ednorn etselyalehu degmo etgelehu..🙏 geta betachinin yeserelenal ...🏡❤️ egn degmo yan bet lemwusad enbertalen ....🥹💑 kaza wuci degmo minm lela hasb mesb maychil be libu anchin becha eyesbe yeminor andi misken sewu edalesh hulem asib...🥺❤️ be fikersh sewun meyzi chlishibet... ke anch ger yelegn relationship ehunetegn edhon yegbegn mulu negershin selmwud nw ...💞 sewu edet dekamunim chmir yefkeral ene ge yelehu fiker edzi nw ke ene dikamish edmfker nw...❤️ kazi bowel 5 wor becha seyhon ...5 years 50 years ..👩‍❤️‍👨💍 liji ye liji liji hulu eska shmgelen bezu hazen ena desta enselflen ...👶🥹❤️ geta anchin yemselech libam ena wud set setognal..👑💕 be tenkeke eyzishalehu...🥰 anch yen becha nesh ...❤️ ke ene wuci le lela sewu athognim ...enem ye anch becha negn ke anch wuci le lela set bal mehon alflgim...💍 yemjmrsh ena yemcherashash negn ...💞 lik belelahu fiker....
+❤️ afkershalehu ❤️
+💗 afkershalehu 💗
+💘 afkershalehu 💘
+🥰 afkershalehu 🥰
+😘 afkershalehu 😘
+❤️ afkershalehu ❤️
+💍 afkershalehu 💍
+👑 Hulem ye anch hasb hasbe nw ...destesh destye nw ...hazenshim degmo haznen nw...🥹💞
+💖 yen wud
+👑 yen mist
+🌍 Yen alam
+❤️ Yen akal
+💑 Yen gudegna
+💍 Yen leyu
+🌹 Yen konjo
+👸 Yen enat
+🥰 Yen tensh
+💕 Yen asibi
+💎 Yen mekeri
+😘 Yen nafkot
+🌷 Yen work
+🦋 Yen ehet
+❤️ Yen hulu negere...hulu neger nesh minm hasb metyek behonim ke anch bowela nw le lela sewu medrsehu...🥹💞 💍anch be hulum huneta wusti yemjmryaye nesh ....♾️🥰 ker zemenen eyafkerkush lenor kel egbelshalehu...❤️💍 yen melkem set...👑💍👸
+Wuddddd...😘❤️💋😘🥰🥰
+Fikerrrrr nw mergish...🥰💞♾️`,
+      },
+      name: { en: "Yene", am: "Yene" },
+    },
   ],
 
   anniversaryDate: "2026-06-01T00:00:00",
