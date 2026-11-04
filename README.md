@@ -7,10 +7,11 @@ A single-page romantic gift website built with plain HTML, CSS and JavaScript. I
 - **Gift intro and welcome** — tap the gift, then a typewriter message appears.
 - **English / Amharic switcher** — updates the interface and all configured content, and remembers the choice in `localStorage`.
 - **Timeline** — memory cards that reveal as you scroll.
-- **Love counter** — completed months, plus days, hours, minutes and seconds since `anniversaryDate`.
+- **Love counter** — years (once a full year has passed), months, days, hours, minutes and seconds since `anniversaryDate`, plus total days together.
+- **Next anniversary countdown** — calculated automatically from `anniversaryDate` (6 months after June 1 is December 1). It rolls on to the next monthly anniversary after each one and shows a romantic celebration message on the anniversary day. All dates use local calendar days, so timezones don't shift them.
 - **Photo gallery and lightbox** — keyboard arrows, Esc to close, double-tap hearts.
 - **Photo slideshow** — auto-rotates, with arrows and dots.
-- **Video gallery** — local MP4 files with native controls, no autoplay.
+- **Video gallery** — local MP4 files with a play button and native controls, no autoplay. Files load lazily (metadata only) as you scroll near them, only one video plays at a time, playback pauses when scrolled away or the tab is hidden, and each card shows loading and error states. Portrait phone clips get a taller frame automatically.
 - **Reasons, emoji messages and heart-tap counter** — with milestone messages.
 - **Love letter** — envelope plus a full-screen modal.
 - **Final surprise** — confetti reveal.
@@ -56,7 +57,7 @@ Everything is configured in the `loveConfig` object at the top of `script.js`.
 | --- | --- |
 | `girlfriendName`, `yourName` | Name shown in the welcome, closing section and page title |
 | `welcomeMessage` | Typewriter text (`en` / `am`) |
-| `anniversaryDate` | Start date for the counter, e.g. `"2026-06-01T00:00:00"` |
+| `anniversaryDate` | Fixed relationship start date (local time), e.g. `"2026-06-01T00:00:00"`. The counter, monthly anniversaries and countdown are all calculated from it |
 | `showLoveCounter` | Show or hide the counter |
 | `occasion` | `"romantic"`, `"birthday"` or `"anniversary"` (changes the closing headline) |
 | `dailyMessages` | Dated notes: `date` (`YYYY-MM-DD`), `topic`, `description`, `name` |
@@ -91,6 +92,16 @@ Put MP4 files in `assets/videos/` and add entries to `loveConfig.videos`:
 }
 ```
 
+#### Video encoding (important)
+
+For the widest browser support, use **MP4 with H.264 video and AAC audio**. Phone videos are often HEVC/H.265, which many desktop browsers can't decode: the card then shows "format isn't supported" (or a black screen in older versions). Convert with [ffmpeg](https://ffmpeg.org):
+
+```bash
+ffmpeg -i input.mov -c:v libx264 -pix_fmt yuv420p -crf 23 -c:a aac -movflags +faststart assets/videos/memory-01.mp4
+```
+
+`+faststart` lets videos start playing before they fully download. File names are case-sensitive on GitHub Pages, and keep each file under GitHub's 100 MB limit. The browser console prints a warning naming any video that is missing or can't be decoded.
+
 ## Deploy to GitHub Pages
 
 1. Commit `index.html`, `style.css`, `script.js`, `README.md` and `assets/` to a repository.
@@ -115,7 +126,9 @@ There is no automated test suite. After editing, check:
 | --- | --- |
 | Blank or unstyled page | `style.css` and `script.js` must sit next to `index.html`, with exact filenames. |
 | Photo shows 📷 | The path or filename (including capitalization) doesn't match a file in `assets/photos/`. |
-| Video section says to add MP4 files | `loveConfig.videos` is empty or the file path is wrong. |
+| Video section says to add MP4 files | `loveConfig.videos` is empty. |
+| Video card says "couldn't be loaded" | The path or file name (case-sensitive) doesn't match a file in `assets/videos/`. |
+| Video card says "format isn't supported" | Re-encode as H.264 + AAC (see Video encoding above). |
 | Counter missing | `showLoveCounter` must be `true` and `anniversaryDate` a valid date. |
 | Page broke after editing text | Strings that span several lines must use backticks (`` ` ``), not `"` or `'`. Run `node --check script.js` to find the line. |
 | Language resets on reload | The browser blocks `localStorage`; the page falls back to English. |

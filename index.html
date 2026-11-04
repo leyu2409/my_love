@@ -99,12 +99,23 @@
   <!-- ============ LOVE COUNTER ============ -->
   <section class="section section--counter" id="loveCounter" hidden>
     <h2 class="section__title" data-i18n="counterTitle">We've Been Creating Memories For</h2>
-    <div class="counter-grid counter-grid--months">
-      <div class="counter-box"><span id="cMonths">0</span><small data-i18n="months">months</small></div>
-      <div class="counter-box"><span id="cDays">0</span><small data-i18n="days">days</small></div>
-      <div class="counter-box"><span id="cHours">0</span><small data-i18n="hours">hours</small></div>
-      <div class="counter-box"><span id="cMinutes">0</span><small data-i18n="minutes">minutes</small></div>
-      <div class="counter-box counter-box--seconds"><span id="cSeconds">0</span><small data-i18n="seconds">seconds</small></div>
+    <div class="counter-layout">
+      <div class="counter-grid counter-grid--months">
+        <div class="counter-box" id="cYearsBox" hidden><span id="cYears">0</span><small data-i18n="years">years</small></div>
+        <div class="counter-box"><span id="cMonths">0</span><small data-i18n="months">months</small></div>
+        <div class="counter-box"><span id="cDays">0</span><small data-i18n="days">days</small></div>
+        <div class="counter-box"><span id="cHours">0</span><small data-i18n="hours">hours</small></div>
+        <div class="counter-box"><span id="cMinutes">0</span><small data-i18n="minutes">minutes</small></div>
+        <div class="counter-box counter-box--seconds"><span id="cSeconds">0</span><small data-i18n="seconds">seconds</small></div>
+      </div>
+
+      <!-- Next anniversary countdown -->
+      <div class="anniv-countdown" id="annivCountdown" role="group" aria-live="polite">
+        <p class="anniv-countdown__title" id="annivTitle"></p>
+        <p class="anniv-countdown__value" id="annivValue"><span id="annivDays">0</span><small id="annivLabel"></small></p>
+        <p class="anniv-countdown__msg" id="annivMsg" hidden></p>
+        <p class="anniv-countdown__total" id="annivTotal"></p>
+      </div>
     </div>
   </section>
 

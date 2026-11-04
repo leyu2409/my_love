@@ -401,6 +401,8 @@ Fikerrrrr nw mergish...🥰💞♾️`,
     },
   ],
 
+  // Fixed relationship start date (local time). All milestones, the duration
+  // counter and the next-anniversary countdown are calculated from this.
   anniversaryDate: "2026-06-01T00:00:00",
   showLoveCounter: true,
   occasion: "romantic",
@@ -917,6 +919,10 @@ const translations = {
     videoGalleryEmpty:
       "Add MP4 files to assets/videos/ and list them in the videos array in script.js.",
     videoUnsupported: "Your browser does not support HTML video.",
+    videoPlay: "Play video",
+    videoLoading: "Loading video…",
+    videoError: "This video couldn't be loaded. Please try again later. 💔",
+    videoFormatError: "This video's format isn't supported by your browser. 💔",
     videoUntitled: "A favorite moment ❤️",
     letterTitle: 'You Have A Letter <span aria-hidden="true">💌</span>',
     openLetter: "Open My Letter",
@@ -947,6 +953,20 @@ const translations = {
     hours: "hours",
     minutes: "minutes",
     seconds: "seconds",
+    years: "years",
+    annivTitleMonth: "{ord} Month Anniversary ❤️",
+    annivTitleYear: "{ord} Year Anniversary ❤️",
+    annivDaysLeft: "Days Left 💍",
+    annivDayLeft: "Day Left 💍",
+    annivCelebrateMonth: "Happy {ord} Month Anniversary, my love! 🎉💍",
+    annivCelebrateYear: "Happy {ord} Year Anniversary, my love! 🎉💍",
+    annivCelebrateSub: "{n} {unit} of us, and I would choose you again every single time. ❤️",
+    unitMonth: "month",
+    unitMonths: "months",
+    unitYear: "year",
+    unitYears: "years",
+    totalDaysTogether: "{n} days together ❤️",
+    totalDayTogether: "{n} day together ❤️",
     surpriseTitle: 'One Last Surprise <span aria-hidden="true">🎁</span>',
     revealBtn: "Reveal It ❤️",
     surpriseLead: "If I could give you one thing...",
@@ -995,6 +1015,10 @@ const translations = {
     videoGalleryEmpty:
       "MP4 ፋይሎችን በassets/videos/ ውስጥ አክሉና በscript.js ውስጥ ባለው videos ዝርዝር ውስጥ ያስገቡ።",
     videoUnsupported: "አሳሽዎ HTML ቪዲዮን አይደግፍም።",
+    videoPlay: "ቪዲዮውን አጫውት",
+    videoLoading: "ቪዲዮ በመጫን ላይ…",
+    videoError: "ይህ ቪዲዮ ሊጫን አልቻለም። እባክዎ ቆይተው ይሞክሩ። 💔",
+    videoFormatError: "የዚህ ቪዲዮ ፎርማት በአሳሽዎ አይደገፍም። 💔",
     videoUntitled: "ውድ ጊዜ ❤️",
     letterTitle: 'ደብዳቤ አለሽ <span aria-hidden="true">💌</span>',
     openLetter: "ደብዳቤዬን ክፈቺ",
@@ -1024,6 +1048,20 @@ const translations = {
     hours: "ሰዓታት",
     minutes: "ደቂቃዎች",
     seconds: "ሰከንዶች",
+    years: "ዓመታት",
+    annivTitleMonth: "{ord} ወር የፍቅር በዓላችን ❤️",
+    annivTitleYear: "{ord} ዓመት የፍቅር በዓላችን ❤️",
+    annivDaysLeft: "ቀናት ቀሩ 💍",
+    annivDayLeft: "ቀን ቀረ 💍",
+    annivCelebrateMonth: "እንኳን ለ{ord} ወር በዓላችን አደረሰን፣ ፍቅሬ! 🎉💍",
+    annivCelebrateYear: "እንኳን ለ{ord} ዓመት በዓላችን አደረሰን፣ ፍቅሬ! 🎉💍",
+    annivCelebrateSub: "{n} {unit} አብረን፣ እና ሁልጊዜም አንቺን እመርጣለሁ። ❤️",
+    unitMonth: "ወር",
+    unitMonths: "ወራት",
+    unitYear: "ዓመት",
+    unitYears: "ዓመታት",
+    totalDaysTogether: "{n} ቀናት አብረን ❤️",
+    totalDayTogether: "{n} ቀን አብረን ❤️",
     surpriseTitle: 'የመጨረሻ አስገራሚ <span aria-hidden="true">🎁</span>',
     revealBtn: "ግለጺ ❤️",
     surpriseLead: "አንድ ነገር ልሰጥሽ ብችል...",
@@ -1050,6 +1088,7 @@ function readSavedLanguage() {
 }
 
 let currentLang = readSavedLanguage();
+let refreshAnniversaryCountdown = null;
 let currentSlideIndex = 0;
 let slideTimer = null;
 let heartTapCount = 0;
@@ -1171,6 +1210,7 @@ function applyLanguage(lang) {
   if (secretLogo) secretLogo.setAttribute("aria-label", t.navLogoLabel);
 
   updateDynamicContent(lang);
+  if (refreshAnniversaryCountdown) refreshAnniversaryCountdown();
 }
 
 function setupLanguageSwitcher() {
@@ -1533,6 +1573,15 @@ function renderDailyJournal(lang) {
   observeMotionElements(grid);
 }
 
+// ========== VIDEO GALLERY ==========
+// Cards are built once. Video files are attached lazily (only when a card is
+// near the viewport) and only their metadata is fetched, so the page stays
+// light. Language changes just update the text, so a playing video is never
+// interrupted or duplicated.
+let videoLazyObserver = null;
+let videoPauseObserver = null;
+let videoGalleryVisibilityBound = false;
+
 function renderVideoGallery(lang) {
   const grid = document.getElementById("videoGallery");
   if (!grid) return;
@@ -1543,11 +1592,13 @@ function renderVideoGallery(lang) {
   ).filter(
     (video) => video && typeof video.src === "string" && video.src.trim(),
   );
-  unobserveMotionElements(grid);
-  grid.replaceChildren();
   grid.setAttribute("aria-label", labels.videoGalleryLabel);
 
   if (!videos.length) {
+    teardownVideoGallery();
+    unobserveMotionElements(grid);
+    grid.replaceChildren();
+    delete grid.dataset.built;
     grid.classList.add("is-empty");
     const emptyMessage = document.createElement("p");
     emptyMessage.setAttribute("role", "listitem");
@@ -1558,43 +1609,240 @@ function renderVideoGallery(lang) {
     return;
   }
 
+  // Already built: only refresh the translated text.
+  if (grid.dataset.built === "true") {
+    grid.querySelectorAll(".video-gallery__card").forEach((card) => {
+      updateVideoCardText(card, lang);
+    });
+    return;
+  }
+
+  teardownVideoGallery();
+  unobserveMotionElements(grid);
+  grid.replaceChildren();
   grid.classList.remove("is-empty");
+  grid.classList.remove("is-visible");
+
+  const canObserve = "IntersectionObserver" in window;
+  if (canObserve) {
+    // Attach the file shortly before a card scrolls into view.
+    videoLazyObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          videoLazyObserver.unobserve(entry.target);
+          loadVideoCard(entry.target.closest(".video-gallery__card"));
+        });
+      },
+      { rootMargin: "300px 0px" },
+    );
+    // Pause a video once it has mostly scrolled out of view.
+    videoPauseObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio < 0.2 && !entry.target.paused)
+            entry.target.pause();
+        });
+      },
+      { threshold: [0, 0.2] },
+    );
+  }
+
+  if (!videoGalleryVisibilityBound) {
+    videoGalleryVisibilityBound = true;
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) return;
+      document
+        .querySelectorAll("#videoGallery video")
+        .forEach((v) => !v.paused && v.pause());
+    });
+  }
+
   videos.forEach((item, index) => {
-    const title = journalText(item.title, lang, labels.videoUntitled);
     const card = document.createElement("article");
     card.className = "video-gallery__card motion-reveal";
     card.setAttribute("role", "listitem");
     card.style.setProperty("--reveal-order", Math.min(index, 6));
+    card.videoItem = item;
+
+    const frame = document.createElement("div");
+    frame.className = "video-gallery__frame";
 
     const video = document.createElement("video");
     video.className = "video-gallery__player";
     video.controls = true;
-    video.preload = "none";
+    video.preload = "none"; // nothing downloads until the card is near the viewport
     video.playsInline = true;
-    video.setAttribute("aria-label", title);
-    video.addEventListener("play", () => {
-      grid.querySelectorAll("video").forEach((other) => {
-        if (other !== video && !other.paused) other.pause();
-      });
-    });
+    video.setAttribute("playsinline", "");
     if (typeof item.poster === "string" && item.poster.trim())
-      video.poster = item.poster;
-
-    const source = document.createElement("source");
-    source.src = item.src.trim();
-    source.type = "video/mp4";
-    video.appendChild(source);
+      video.poster = item.poster.trim();
     video.appendChild(document.createTextNode(labels.videoUnsupported));
+
+    const playBtn = document.createElement("button");
+    playBtn.type = "button";
+    playBtn.className = "video-gallery__play";
+    playBtn.innerHTML = '<span aria-hidden="true">▶</span>';
+    playBtn.addEventListener("click", () => {
+      if (!video.currentSrc && !video.getAttribute("src")) loadVideoCard(card);
+      playVideoCard(card);
+    });
+
+    const status = document.createElement("div");
+    status.className = "video-gallery__status";
+    status.setAttribute("role", "status");
+    status.innerHTML =
+      '<span class="video-gallery__spinner" aria-hidden="true"></span><span class="video-gallery__status-text"></span>';
 
     const heading = document.createElement("h3");
     heading.className = "video-gallery__title";
-    heading.textContent = title;
 
-    card.append(video, heading);
+    frame.append(video, playBtn, status);
+    card.append(frame, heading);
     grid.appendChild(card);
+
+    // --- playback + state events ---
+    video.addEventListener("play", () => {
+      // Only one video plays at a time.
+      grid.querySelectorAll("video").forEach((other) => {
+        if (other !== video && !other.paused) other.pause();
+      });
+      card.classList.add("is-playing");
+    });
+    video.addEventListener("pause", () => card.classList.remove("is-playing"));
+    video.addEventListener("ended", () => card.classList.remove("is-playing"));
+    video.addEventListener("waiting", () => setVideoCardState(card, "loading"));
+    video.addEventListener("loadstart", () => {
+      if (card.dataset.state !== "error" && card.dataset.state !== "format")
+        setVideoCardState(card, "loading");
+    });
+    video.addEventListener("loadedmetadata", () => {
+      // A video track that can't be decoded (for example HEVC from some
+      // phones) reports no dimensions: that is the classic black screen.
+      if (!video.videoWidth || !video.videoHeight) {
+        console.warn("Video has no decodable video track:", item.src);
+        setVideoCardState(card, "format");
+        return;
+      }
+      // Portrait clips get a taller frame so they are not shrunk or cut off.
+      frame.classList.toggle(
+        "is-portrait",
+        video.videoHeight > video.videoWidth * 1.05,
+      );
+      setVideoCardState(card, "ready");
+    });
+    video.addEventListener("canplay", () => {
+      if (video.videoWidth) setVideoCardState(card, "ready");
+    });
+    video.addEventListener("playing", () => {
+      if (video.videoWidth) setVideoCardState(card, "ready");
+    });
+    video.addEventListener("error", () => handleVideoError(card));
+
+    updateVideoCardText(card, lang);
+
+    if (typeof video.canPlayType === "function" && !video.canPlayType("video/mp4")) {
+      setVideoCardState(card, "format");
+    } else if (canObserve) {
+      setVideoCardState(card, "idle");
+      videoLazyObserver.observe(frame);
+      videoPauseObserver.observe(video);
+    } else {
+      loadVideoCard(card);
+    }
   });
 
+  grid.dataset.built = "true";
   observeMotionElements(grid);
+}
+
+function teardownVideoGallery() {
+  if (videoLazyObserver) videoLazyObserver.disconnect();
+  if (videoPauseObserver) videoPauseObserver.disconnect();
+  videoLazyObserver = null;
+  videoPauseObserver = null;
+  document
+    .querySelectorAll("#videoGallery video")
+    .forEach((v) => !v.paused && v.pause());
+}
+
+// Attaches the file and fetches only its metadata (first frame + dimensions).
+function loadVideoCard(card) {
+  if (!card || card.dataset.loaded === "true") return;
+  const video = card.querySelector("video");
+  const src = card.videoItem.src.trim();
+  if (!video || card.dataset.state === "format") return;
+  card.dataset.loaded = "true";
+  setVideoCardState(card, "loading");
+  video.preload = "metadata";
+  // #t=0.1 makes browsers show a real frame instead of a black box when there is no poster.
+  video.src = src.includes("#") ? src : src + "#t=0.1";
+  video.load();
+}
+
+function playVideoCard(card) {
+  const video = card.querySelector("video");
+  if (!video) return;
+  const attempt = video.play();
+  if (attempt && typeof attempt.catch === "function") {
+    attempt.catch((err) => {
+      if (err && err.name === "NotSupportedError") handleVideoError(card);
+      // AbortError / NotAllowedError: the user paused or the browser blocked it; stay quiet.
+    });
+  }
+}
+
+// Tells a missing file (wrong path/name) apart from a file the browser can't decode.
+function handleVideoError(card) {
+  const video = card.querySelector("video");
+  const src = card.videoItem.src.trim();
+  if (!video || !video.getAttribute("src")) return;
+  setVideoCardState(card, "error");
+  if (typeof fetch !== "function") return;
+  fetch(src, { method: "HEAD" })
+    .then((res) => {
+      if (res.ok) {
+        console.warn("Video exists but can't be played (format/codec):", src);
+        setVideoCardState(card, "format");
+      } else {
+        console.warn("Video file not found (" + res.status + "):", src);
+      }
+    })
+    .catch(() => console.warn("Video failed to load:", src));
+}
+
+function setVideoCardState(card, state) {
+  // Once a video is known to be broken, only a successful load clears it.
+  if (
+    (card.dataset.state === "error" || card.dataset.state === "format") &&
+    state !== "ready" &&
+    state !== "error" &&
+    state !== "format"
+  )
+    return;
+  card.dataset.state = state;
+  updateVideoCardText(card);
+}
+
+function updateVideoCardText(card, lang = currentLang) {
+  const labels = translations[lang] || translations.en;
+  const title = journalText(card.videoItem.title, lang, labels.videoUntitled);
+  const state = card.dataset.state || "idle";
+  const video = card.querySelector("video");
+  card.querySelector(".video-gallery__title").textContent = title;
+  video.setAttribute("aria-label", title);
+  const playBtn = card.querySelector(".video-gallery__play");
+  playBtn.setAttribute("aria-label", labels.videoPlay + ": " + title);
+  const text = card.querySelector(".video-gallery__status-text");
+  text.textContent =
+    state === "loading"
+      ? labels.videoLoading
+      : state === "error"
+        ? labels.videoError
+        : state === "format"
+          ? labels.videoFormatError
+          : "";
+  playBtn.hidden = state === "error" || state === "format";
+  video.controls = state !== "error" && state !== "format";
 }
 
 // ========== APPLY NAMES ==========
@@ -2350,11 +2598,87 @@ function setupHeartTap(reduced) {
 }
 
 // ========== LOVE COUNTER ==========
+// All date maths below uses LOCAL calendar dates (year / month / day), never
+// UTC strings or millisecond offsets, so results can't drift across timezones
+// or daylight-saving changes. Day differences use Date.UTC() on the local
+// y/m/d values purely as a DST-proof day counter.
+
+// Parses "YYYY-MM-DD" or "YYYY-MM-DDTHH:mm:ss" as a LOCAL date-time.
+function parseLocalDate(value) {
+  const m = String(value || "").match(
+    /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/,
+  );
+  if (!m) return null;
+  const d = new Date(
+    Number(m[1]),
+    Number(m[2]) - 1,
+    Number(m[3]),
+    Number(m[4] || 0),
+    Number(m[5] || 0),
+    Number(m[6] || 0),
+  );
+  return isNaN(d.getTime()) ? null : d;
+}
+
+// Local calendar date of the n-th monthly anniversary of `start`.
+// Builds from day 1 and clamps the day, so it never overflows into the next
+// month (June 1 + 6 months is always December 1, and Jan 31 + 1 month is Feb 28/29).
+function getMonthlyAnniversary(start, n) {
+  const first = new Date(start.getFullYear(), start.getMonth() + n, 1);
+  const lastDay = new Date(first.getFullYear(), first.getMonth() + 1, 0).getDate();
+  return new Date(
+    first.getFullYear(),
+    first.getMonth(),
+    Math.min(start.getDate(), lastDay),
+    start.getHours(),
+    start.getMinutes(),
+    start.getSeconds(),
+  );
+}
+
+// Day number on the local calendar (DST-proof way to count days between dates).
+function calendarDayNumber(date) {
+  return Math.round(
+    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000,
+  );
+}
+
+// Works out where "today" sits among the monthly anniversaries:
+//   elapsedMonths  completed months so far (0 before the 1st anniversary)
+//   isToday        true on an anniversary date (celebration day)
+//   milestone      which anniversary today is, when isToday
+//   nextMilestone  the upcoming anniversary number (1 = one month, 12 = one year, ...)
+//   daysLeft       calendar days until that upcoming anniversary
+function getAnniversaryStatus(start, now) {
+  const today = calendarDayNumber(now);
+  let elapsed =
+    (now.getFullYear() - start.getFullYear()) * 12 +
+    now.getMonth() -
+    start.getMonth();
+  while (elapsed > 0 && calendarDayNumber(getMonthlyAnniversary(start, elapsed)) > today)
+    elapsed--;
+  const elapsedMonths = Math.max(0, elapsed);
+  const isToday =
+    elapsedMonths >= 1 &&
+    calendarDayNumber(getMonthlyAnniversary(start, elapsedMonths)) === today;
+  const nextMilestone = elapsedMonths + 1;
+  const daysLeft = isToday
+    ? 0
+    : calendarDayNumber(getMonthlyAnniversary(start, nextMilestone)) - today;
+  return {
+    elapsedMonths,
+    isToday,
+    milestone: isToday ? elapsedMonths : 0,
+    nextMilestone,
+    daysLeft,
+  };
+}
+
 function setupLoveCounter() {
   if (!loveConfig.showLoveCounter) return;
   const section = document.getElementById("loveCounter");
-  const start = new Date(loveConfig.anniversaryDate);
-  if (isNaN(start.getTime())) return;
+  const start = parseLocalDate(loveConfig.anniversaryDate);
+  if (!start) return;
 
   section.hidden = false;
   const els = {
@@ -2365,11 +2689,21 @@ function setupLoveCounter() {
     seconds: document.getElementById("cSeconds"),
   };
   if (Object.values(els).some((el) => !el)) return;
+  const yearsEl = document.getElementById("cYears");
+  const yearsBox = document.getElementById("cYearsBox");
+
+  refreshAnniversaryCountdown = setupAnniversaryCountdown(start);
 
   function tick() {
+    if (refreshAnniversaryCountdown) refreshAnniversaryCountdown();
     const duration = getRelationshipDuration(start, new Date());
-    Object.entries(duration).forEach(([unit, value]) => {
-      els[unit].textContent = String(value);
+    // Years appear only once a full year has passed; months then show the remainder.
+    if (yearsEl && yearsBox) {
+      yearsBox.hidden = duration.years < 1;
+      yearsEl.textContent = String(duration.years);
+    }
+    Object.keys(els).forEach((unit) => {
+      els[unit].textContent = String(duration[unit]);
     });
     const secondsBox = els.seconds.closest(".counter-box");
     if (secondsBox) {
@@ -2391,8 +2725,114 @@ function setupLoveCounter() {
   });
 }
 
+function formatOrdinal(n, lang) {
+  if (lang === "am") return n + "ኛ";
+  const mod100 = n % 100;
+  if (mod100 >= 11 && mod100 <= 13) return n + "th";
+  return n + (["th", "st", "nd", "rd"][n % 10] || "th");
+}
+
+function fillTemplate(text, values) {
+  return String(text).replace(/\{(\w+)\}/g, (_, k) =>
+    k in values ? values[k] : "",
+  );
+}
+
+// Shows the next monthly anniversary countdown, and swaps in a romantic
+// celebration message on the anniversary day itself. After the day passes it
+// automatically points at the following month. Returns a cheap render
+// function that the counter tick (and language switcher) can call.
+function setupAnniversaryCountdown(start) {
+  const card = document.getElementById("annivCountdown");
+  const titleEl = document.getElementById("annivTitle");
+  const valueEl = document.getElementById("annivValue");
+  const daysEl = document.getElementById("annivDays");
+  const labelEl = document.getElementById("annivLabel");
+  const msgEl = document.getElementById("annivMsg");
+  const totalEl = document.getElementById("annivTotal");
+  if (!card || !titleEl || !valueEl || !daysEl || !labelEl || !msgEl) return null;
+
+  let lastKey = "";
+  return function renderCountdown() {
+    const now = new Date();
+    const status = getAnniversaryStatus(start, now);
+    const totalDays = Math.max(
+      0,
+      calendarDayNumber(now) - calendarDayNumber(start),
+    );
+    const key = [
+      currentLang,
+      status.isToday ? "c" + status.milestone : "n" + status.nextMilestone,
+      status.daysLeft,
+      totalDays,
+    ].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+
+    const t = translations[currentLang] || translations.en;
+    const describe = (n) => {
+      const isYear = n % 12 === 0;
+      const count = isYear ? n / 12 : n;
+      return {
+        isYear,
+        count,
+        ord: formatOrdinal(count, currentLang),
+        unit: isYear
+          ? count === 1 ? t.unitYear : t.unitYears
+          : count === 1 ? t.unitMonth : t.unitMonths,
+      };
+    };
+
+    if (totalEl) {
+      totalEl.textContent = fillTemplate(
+        totalDays === 1 ? t.totalDayTogether : t.totalDaysTogether,
+        { n: totalDays },
+      );
+    }
+
+    if (status.isToday) {
+      const d = describe(status.milestone);
+      titleEl.textContent = fillTemplate(
+        d.isYear ? t.annivTitleYear : t.annivTitleMonth,
+        { ord: d.ord },
+      );
+      card.classList.add("is-celebrating");
+      valueEl.hidden = true;
+      msgEl.hidden = false;
+      msgEl.textContent =
+        fillTemplate(d.isYear ? t.annivCelebrateYear : t.annivCelebrateMonth, {
+          ord: d.ord,
+        }) +
+        " " +
+        fillTemplate(t.annivCelebrateSub, { n: d.count, unit: d.unit });
+    } else {
+      const d = describe(status.nextMilestone);
+      titleEl.textContent = fillTemplate(
+        d.isYear ? t.annivTitleYear : t.annivTitleMonth,
+        { ord: d.ord },
+      );
+      card.classList.remove("is-celebrating");
+      valueEl.hidden = false;
+      msgEl.hidden = true;
+      daysEl.textContent = String(status.daysLeft);
+      labelEl.textContent =
+        status.daysLeft === 1 ? t.annivDayLeft : t.annivDaysLeft;
+    }
+  };
+}
+
+// Elapsed time since `start`: years, months (remainder after years), then days,
+// hours, minutes, seconds. Months are calendar months, so on December 1, 2026
+// exactly 6 months have passed. Day counting is DST-safe.
 function getRelationshipDuration(start, end) {
-  const duration = { months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
+  const duration = {
+    years: 0,
+    months: 0,
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  };
   if (
     !(start instanceof Date) ||
     !(end instanceof Date) ||
@@ -2406,35 +2846,25 @@ function getRelationshipDuration(start, end) {
     (end.getFullYear() - start.getFullYear()) * 12 +
     end.getMonth() -
     start.getMonth();
-  const getAnniversary = (monthOffset) => {
-    const monthStart = new Date(
-      start.getFullYear(),
-      start.getMonth() + monthOffset,
-      1,
-      start.getHours(),
-      start.getMinutes(),
-      start.getSeconds(),
-      start.getMilliseconds(),
-    );
-    const lastDay = new Date(
-      monthStart.getFullYear(),
-      monthStart.getMonth() + 1,
-      0,
-    ).getDate();
-    monthStart.setDate(Math.min(start.getDate(), lastDay));
-    return monthStart;
-  };
+  while (months > 0 && getMonthlyAnniversary(start, months) > end) months--;
+  months = Math.max(0, months);
 
-  if (getAnniversary(months) > end) months--;
-  let remainder = end.getTime() - getAnniversary(months).getTime();
-  duration.months = Math.max(0, months);
-  duration.days = Math.floor(remainder / 86400000);
-  remainder %= 86400000;
-  duration.hours = Math.floor(remainder / 3600000);
-  remainder %= 3600000;
-  duration.minutes = Math.floor(remainder / 60000);
-  remainder %= 60000;
-  duration.seconds = Math.floor(remainder / 1000);
+  const base = getMonthlyAnniversary(start, months);
+  const secondsOfDay = (d) =>
+    d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
+  let days = calendarDayNumber(end) - calendarDayNumber(base);
+  let secs = secondsOfDay(end) - secondsOfDay(base);
+  if (secs < 0) {
+    days--;
+    secs += 86400;
+  }
+
+  duration.years = Math.floor(months / 12);
+  duration.months = months % 12;
+  duration.days = Math.max(0, days);
+  duration.hours = Math.floor(secs / 3600);
+  duration.minutes = Math.floor((secs % 3600) / 60);
+  duration.seconds = secs % 60;
   return duration;
 }
 
