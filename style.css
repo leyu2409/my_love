@@ -1421,9 +1421,10 @@ body.menu-open .nav__toggle span:nth-child(3) {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
+  max-height: 80vh;
   border-radius: calc(var(--radius-lg) - 8px);
-  background: rgba(0, 0, 0, 0.36);
-  object-fit: cover;
+  background: #000;
+  object-fit: contain;
 }
 
 .video-gallery__title {
@@ -1432,6 +1433,16 @@ body.menu-open .nav__toggle span:nth-child(3) {
   font-size: clamp(1.15rem, 2vw, 1.45rem);
   line-height: 1.35;
   overflow-wrap: anywhere;
+}
+
+.video-gallery__player:fullscreen {
+  object-fit: contain;
+  background: #000;
+}
+
+.video-gallery__player:-webkit-full-screen {
+  object-fit: contain;
+  background: #000;
 }
 
 @media (max-width: 600px) {
